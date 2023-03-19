@@ -6,7 +6,7 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Wall" parent="." instance=ExtResource( 2 )]
 position = Vector2( 370, 288 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
@@ -22,3 +22,8 @@ bbcode_text = "[center][color=#]type this.[/color][/center]"
 text = "type this."
 scroll_active = false
 script = ExtResource( 3 )
+[node name="CameraPlayer" type="Camera2D" parent="KinematicBody2D"]
+position = Vector2( 0, -1 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_enabled = true
