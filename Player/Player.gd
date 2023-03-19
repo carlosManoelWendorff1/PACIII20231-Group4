@@ -18,5 +18,4 @@ func _physics_process(delta):
 		motion += Vector2(0, -1)
 		set_rotation_degrees(270)
 	motion = motion.normalized() * SPEED * delta
-	print(motion)
 	move_and_slide(motion)
