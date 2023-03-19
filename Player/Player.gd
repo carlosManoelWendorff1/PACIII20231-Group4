@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 const SPEED = 10000
 var motion = Vector2.ZERO
+export var camera_speed = 1
 
 func _physics_process(delta):
 	motion = Vector2.ZERO
@@ -18,5 +19,11 @@ func _physics_process(delta):
 		motion += Vector2(0, -1)
 		set_rotation_degrees(270)
 	motion = motion.normalized() * SPEED * delta
-	print(motion)
 	move_and_slide(motion)
+
+func _on_Area2D_area_entered(area):
+	print("collided") # Replace with function body.
+
+
+func _on_Area2D_area_exited(area):
+	print("collided") # Replace with function body

@@ -5,8 +5,14 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Wall" parent="." instance=ExtResource( 2 )]
 position = Vector2( 370, 288 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
 position = Vector2( 435, 341 )
+
+[node name="CameraPlayer" type="Camera2D" parent="KinematicBody2D"]
+position = Vector2( 0, -1 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_enabled = true
