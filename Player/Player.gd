@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 const SPEED = 10000
 var motion = Vector2.ZERO
+var inArea = false
 export var camera_speed = 1
 
 func _physics_process(delta):
@@ -20,10 +21,19 @@ func _physics_process(delta):
 		set_rotation_degrees(270)
 	motion = motion.normalized() * SPEED * delta
 	move_and_slide(motion)
+	if(Input.is_action_pressed("ui_accept") && inArea):
+		print("kkkk")
+		get_tree().change_scene("res://Cenas/CenaLuta.tscn")
 
-func _on_Area2D_area_entered(area):
-	print("collided") # Replace with function body.
+func _on_Area2DPlayer_area_exited(area):
+	print("desencostou {}",area) # Replace with function body.
+	inArea = false
+	print(inArea)
 
 
-func _on_Area2D_area_exited(area):
-	print("collided") # Replace with function body
+func _on_Area2DPlayer_area_entered(area):
+	if Input.is_action_pressed("ui_accept"):
+		print("kkkk")
+	print("encstou {}",area) # Replace with function body. # Replace with function body.
+	inArea = true
+	print(inArea)
