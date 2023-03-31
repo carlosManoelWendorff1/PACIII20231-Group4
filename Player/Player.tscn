@@ -8,7 +8,7 @@
 extents = Vector2( 10, 15.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 112.5, 37 )
+extents = Vector2( 25.25, 21.75 )
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -20,14 +20,13 @@ texture = ExtResource( 2 )
 position = Vector2( 0, -0.5 )
 shape = SubResource( 3 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2DPlayer" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 3 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 0, -1 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DPlayer"]
 shape = SubResource( 4 )
 
-[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_Area2D_area_entered"]
-[connection signal="area_exited" from="Area2D" to="." method="_on_Area2D_area_exited"]
+[connection signal="area_entered" from="Area2DPlayer" to="." method="_on_Area2DPlayer_area_entered"]
+[connection signal="area_exited" from="Area2DPlayer" to="." method="_on_Area2DPlayer_area_exited"]
