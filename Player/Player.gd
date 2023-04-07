@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+var methods = null
+
 const SPEED = 10000
 var motion = Vector2.ZERO
 var inArea = false
@@ -23,7 +25,9 @@ func _physics_process(delta):
 	move_and_slide(motion)
 	if(Input.is_action_pressed("ui_accept") && inArea):
 		print("kkkk")
-		get_tree().change_scene("res://Cenas/CenaLuta.tscn")
+		get_tree().change_scene("res://Cenas/DialogueContainer.tscn")
+		
+		
 
 func _process(delta):
 	if(Input.is_action_just_released("ui_cancel")):
