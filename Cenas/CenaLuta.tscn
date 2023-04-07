@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Bola.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Objetos/Bola.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Cenas/Input.gd" type="Script" id=2]
 [ext_resource path="res://Cenas/text_component.gd" type="Script" id=3]
 
