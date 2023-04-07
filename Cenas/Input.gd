@@ -4,7 +4,7 @@ var gray = Color("#A9A9A9")
 var white = Color("#FFFFFF")
 var red = Color("#a65455")
 
-var desired_text = "texto de teste"
+var desired_text = "Vai tomar no cu davy jones"
 
 var hasText = false
 var oldText = ""
