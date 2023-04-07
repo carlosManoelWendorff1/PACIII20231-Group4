@@ -25,6 +25,10 @@ func _physics_process(delta):
 		print("kkkk")
 		get_tree().change_scene("res://Cenas/CenaLuta.tscn")
 
+func _process(delta):
+	if(Input.is_action_just_released("ui_cancel")):
+		SceneTransition.change_scene("res://UI/Menu.tscn")
+	
 func _on_Area2DPlayer_area_exited(area):
 	print("desencostou {}",area) # Replace with function body.
 	inArea = false
