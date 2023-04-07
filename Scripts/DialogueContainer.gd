@@ -17,7 +17,7 @@ var dialogue_list: Dictionary = {
 		"Que a batalha comece."
 	],
 	
-	"name": null
+	"name": "Narrador"
 }
 
 export(float) var wait_time = 0.02
@@ -28,7 +28,7 @@ func _ready() -> void:
 	
 	if dialogue_list["name"] != null:
 		label_name.text = dialogue_list["name"]
-		text_label.rect_position = Vector2(720,94)
+		text_label.rect_position = Vector2(50,50)
 		
 	show_dialogue()
 	
