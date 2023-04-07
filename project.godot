@@ -11,13 +11,12 @@ config_version=4
 [application]
 
 config/name="Pac"
-run/main_scene="res://UI/Menu.tscn"
+run/main_scene="res://Cenas/Cena mapa.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-SceneTransition="*res://UI/scene_transition.tscn"
-Label2="*res://UI/Label2.gd"
+SceneTransition="*res://Scripts/SceneTransition.gd"
 
 [gui]
 
