@@ -114,7 +114,7 @@ extents = Vector2( 10.5, 14.125 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 2, -2 )
+position = Vector2( -8, 0 )
 scale = Vector2( 0.941176, 0.952381 )
 texture = ExtResource( 1 )
 hframes = 8
@@ -124,5 +124,4 @@ anims/RESET = SubResource( 4 )
 anims/iddle = SubResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 8.5, -4.125 )
 shape = SubResource( 3 )

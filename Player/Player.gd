@@ -25,7 +25,7 @@ func _physics_process(delta):
 
 	motion = motion.normalized() * SPEED * delta
 	move_and_slide(motion)
-	if(Input.is_action_pressed("ui_accept") && inArea):
+	if(inArea):
 		print("kkkk")
 		get_tree().change_scene("res://Cenas/DialogueContainer.tscn")
 		
@@ -48,6 +48,6 @@ func animate() -> void:
 func _on_Area2DPlayer_area_entered(area):
 	if Input.is_action_pressed("ui_accept"):
 		print("kkkk")
-	print("encstou {}",area) # Replace with function body. # Replace with function body.
+	print("encostou {}",area) # Replace with function body. # Replace with function body.
 	inArea = true
 	print(inArea)

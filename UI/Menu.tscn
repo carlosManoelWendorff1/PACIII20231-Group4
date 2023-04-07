@@ -65,12 +65,12 @@ flat = true
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -328.0
-margin_top = 88.0
-margin_right = 248.0
-margin_bottom = 189.0
+margin_left = -332.0
+margin_top = 92.0
+margin_right = 292.0
+margin_bottom = 193.0
 custom_fonts/font = SubResource( 3 )
-text = "Typing Tower"
+text = "Typing Titans"
 script = ExtResource( 4 )
 
 [node name="TweenLabel" type="Tween" parent="Label"]

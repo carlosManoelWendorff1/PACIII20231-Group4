@@ -93,7 +93,7 @@ custom_colors/selection_color = Color( 0.447059, 0.443137, 0.443137, 1 )
 custom_fonts/normal_font = SubResource( 2 )
 
 [node name="enemy" parent="Background" instance=ExtResource( 5 )]
-position = Vector2( 280, -168 )
+position = Vector2( 360, -168 )
 scale = Vector2( 10, 10 )
 
 [node name="Animation" type="AnimationPlayer" parent="."]
