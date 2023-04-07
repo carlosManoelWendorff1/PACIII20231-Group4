@@ -1,5 +1,6 @@
 extends Control
 
+var Bola = null;
 var input = null;
 
 var inAttack = false;
@@ -38,6 +39,7 @@ func start_attack(words: int = 5) -> void:
 
 func _ready():
 	input = get_node("input_text");
+	Bola = self.get_parent().get_node("Bola/LifeBar")
 	# TODO: Remover quando existir um método que inicia o ataque;
 	self.temp();
 
@@ -46,14 +48,16 @@ func process_input_result(accuracy: float) -> void:
 	accuracy_sum += accuracy;
 	number_of_attacks += 1;
 	if(accuracy >= 70):
-		print("Ataque");
-		if(number_of_attacks == 1):
-			
-			SceneTransition.change_scene("res://UI/Battle_result/BattleResultMenu.tscn")
-			
-		# Método de ataque;
+		var damage = randi() % 15 + 15;
+		if(accuracy == 100):
+			damage *=2
+			print("Critical Hit")
+		else:
+			print("Hit")
+		print("Damage: " + str(damage))
+		Bola.take_damage(damage)
 	else:
-		print("Errar");
+		print("Miss");
 		#Método de errar
 	input.end();
 	# TODO: Remover quando existir um método que inicia o ataque;
