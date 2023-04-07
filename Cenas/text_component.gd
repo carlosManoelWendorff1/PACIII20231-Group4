@@ -1,6 +1,6 @@
 extends Control
 
-var Bola = null;
+var LifeBar = null;
 var input = null;
 
 var inAttack = false;
@@ -39,7 +39,7 @@ func start_attack(words: int = 5) -> void:
 
 func _ready():
 	input = get_node("input_text");
-	Bola = self.get_parent().get_node("Bola/LifeBar")
+	LifeBar = self.get_parent().get_node("LifeBar")
 	# TODO: Remover quando existir um método que inicia o ataque;
 	self.temp();
 
@@ -55,7 +55,7 @@ func process_input_result(accuracy: float) -> void:
 		else:
 			print("Hit")
 		print("Damage: " + str(damage))
-		Bola.take_damage(damage)
+		LifeBar.take_damage(damage)
 	else:
 		print("Miss");
 		#Método de errar

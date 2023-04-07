@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/0x72_DungeonTilesetII_v1.3.png-788d31902af432c5eac8724c03798c37.stex"
+path="res://.import/enemy.png-e62b50cb28ae0d4d3ad78a5485dadc76.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/AssetsAlternativo/TileMapAlt/0x72_DungeonTilesetII_v1.3.png"
-dest_files=[ "res://.import/0x72_DungeonTilesetII_v1.3.png-788d31902af432c5eac8724c03798c37.stex" ]
+source_file="res://Assets/AssetsAlternativo/SpritesheetAlt/enemy.png"
+dest_files=[ "res://.import/enemy.png-e62b50cb28ae0d4d3ad78a5485dadc76.stex" ]
 
 [params]
 

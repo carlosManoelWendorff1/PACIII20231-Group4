@@ -1,12 +1,11 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Objetos/Walls.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/Sample.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Tilesheet/groundGrass_mownWide.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Tilemap/tilemap.png" type="Texture" id=6]
+[ext_resource path="res://walls/Walls.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Cenas/Input.gd" type="Script" id=3]
+[ext_resource path="res://Assets/AssetsAlternativo/TileMapAlt/0x72_DungeonTilesetII_v1.3.png" type="Texture" id=4]
 [ext_resource path="res://tilemap/TileMap.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Objetos/door.tscn" type="PackedScene" id=8]
+[ext_resource path="res://door.tscn" type="PackedScene" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -127,6 +126,17 @@ position = Vector2( 0, -1 )
 current = true
 zoom = Vector2( 0.5, 0.5 )
 smoothing_enabled = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 8.0
+margin_top = 26.0
+margin_right = 332.0
+margin_bottom = 58.0
+bbcode_enabled = true
+bbcode_text = "[center][color=#]type this.[/color][/center]"
+text = "type this."
+scroll_active = false
+script = ExtResource( 3 )
 
 [node name="Porta" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1253, 640 )
