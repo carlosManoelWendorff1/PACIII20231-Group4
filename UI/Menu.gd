@@ -25,7 +25,7 @@ func _on_QuitButton_pressed():
 func _on_PlayButton_pressed():
 	print("Play Pressed")
 	
-	SceneTransition.change_scene("res://Cenas/Cena mapa.tscn")
+	SceneTransition.change_scene("res://Cenas/Mapa.tscn")
 	pass # Replace with function body.
 
 

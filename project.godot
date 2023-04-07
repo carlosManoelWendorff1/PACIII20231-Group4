@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Pac"
-run/main_scene="res://Cenas/Mapa.tscn"
+run/main_scene="res://UI/Menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]

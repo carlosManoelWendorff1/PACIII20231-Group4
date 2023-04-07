@@ -9,7 +9,6 @@
 [ext_resource path="res://Objetos/Walls.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Cenas/objects.tscn" type="PackedScene" id=8]
 
-
 [sub_resource type="TileSet" id=1]
 0/name = "Floor"
 0/texture = ExtResource( 1 )
@@ -36,6 +35,7 @@
 0/z_index = 0
 
 [node name="Node2D" type="Node2D"]
+scale = Vector2( 3, 3 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -48,6 +48,13 @@ tile_data = PoolIntArray( -65535, 9, 0, -65534, 9, 0, -65533, 2, 0, -65532, 2, 0
 
 [node name="KinematicBody2D" parent="TileMap/TileWall" instance=ExtResource( 3 )]
 position = Vector2( 34, 156 )
+
+[node name="Camera2D" type="Camera2D" parent="TileMap/TileWall/KinematicBody2D"]
+scale = Vector2( 1, 0.98283 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_enabled = true
+smoothing_speed = 10.0
 
 [node name="TilePort" parent="TileMap" instance=ExtResource( 4 )]
 tile_data = PoolIntArray( 589844, 6, 0, 589845, 8, 0, 655379, 2, 0, 655380, 10, 0, 655381, 7, 0, 655382, 3, 0, 720915, 1, 0, 720916, 4, 0, 720917, 5, 0, 720918, 0, 0 )

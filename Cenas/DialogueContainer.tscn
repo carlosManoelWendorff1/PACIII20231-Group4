@@ -4,7 +4,7 @@
 [ext_resource path="res://Assets/AssetsAlternativo/Fonts/bit_potion.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/AssetsAlternativo/Fonts/thaleah_fat.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Scripts/DialogueContainer.gd" type="Script" id=4]
-[ext_resource path="res://Assets/PNG/Equipment/ball_basket4.png" type="Texture" id=5]
+[ext_resource path="res://enemy/enemy.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=6]
 font_data = ExtResource( 3 )
@@ -91,10 +91,9 @@ custom_colors/default_color = Color( 1, 1, 1, 1 )
 custom_colors/selection_color = Color( 0.447059, 0.443137, 0.443137, 1 )
 custom_fonts/normal_font = SubResource( 2 )
 
-[node name="BallBasket4" type="Sprite" parent="Background"]
-position = Vector2( 376, -168 )
-scale = Vector2( 7.63889, 7.61111 )
-texture = ExtResource( 5 )
+[node name="enemy" parent="Background" instance=ExtResource( 5 )]
+position = Vector2( 280, -168 )
+scale = Vector2( 10, 10 )
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 3 )
