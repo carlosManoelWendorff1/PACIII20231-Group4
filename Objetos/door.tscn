@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/Tiles/tile_0089.png" type="Texture" id=1]
-[ext_resource path="res://door.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/door.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 31, 6.5 )
