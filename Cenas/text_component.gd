@@ -1,6 +1,7 @@
 extends Control
 
-var LifeBar = null;
+var enemy_life = null;
+var player_life = null;
 var input = null;
 
 var inAttack = false;
@@ -39,7 +40,8 @@ func start_attack(words: int = 5) -> void:
 
 func _ready():
 	input = get_node("input_text");
-	LifeBar = self.get_parent().get_node("LifeBar")
+	enemy_life = self.get_parent().get_node("EnemyLife")
+	player_life = self.get_parent().get_node("PlayerLife")
 	# TODO: Remover quando existir um método que inicia o ataque;
 	self.temp();
 
@@ -55,10 +57,16 @@ func process_input_result(accuracy: float) -> void:
 		else:
 			print("Hit")
 		print("Damage: " + str(damage))
-		LifeBar.take_damage(damage)
+		enemy_life.take_damage(damage)
 	else:
-		print("Miss");
-		#Método de errar
+		var damage = randi() % 15 + 15;
+		if(accuracy == 0):
+			damage *=2
+			print("Critical Miss")
+		else:
+			print("Miss")
+		print("Damage: " + str(damage))
+		player_life.take_damage(damage)
 	input.end();
 	# TODO: Remover quando existir um método que inicia o ataque;
 	self.temp();
