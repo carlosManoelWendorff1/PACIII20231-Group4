@@ -1,0 +1,68 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Assets/AssetsAlternativo/DialogueBox/Texboxdefinitivaedecente.png" type="Texture" id=1]
+[ext_resource path="res://enemy/enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Objetos/LifeBar.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/text_component.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Input.gd" type="Script" id=5]
+[ext_resource path="res://UI/Battle_result/ChiKareGo2.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Assets/AssetsAlternativo/Fonts/thaleah_fat.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/AssetsAlternativo/SpritesheetAlt/d9spuwer2c491.webp" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 6 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="D9Spuwer2C491" type="Sprite" parent="."]
+position = Vector2( 512, 300 )
+scale = Vector2( 0.975238, 1.11111 )
+texture = ExtResource( 8 )
+
+[node name="TextComponent" type="Control" parent="."]
+margin_left = 544.0
+margin_top = 336.0
+margin_right = 960.0
+margin_bottom = 512.0
+script = ExtResource( 4 )
+
+[node name="Texboxdefinitivaedecente" type="Sprite" parent="TextComponent"]
+position = Vector2( 208, 88 )
+scale = Vector2( 0.554667, 1.17333 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="input_text" type="RichTextLabel" parent="TextComponent"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 400.0
+margin_bottom = 160.0
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+scroll_active = false
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="LifeBar" type="ProgressBar" parent="."]
+margin_left = 712.0
+margin_top = 24.0
+margin_right = 1010.0
+margin_bottom = 53.0
+rect_scale = Vector2( 0.992151, 1.06085 )
+custom_fonts/font = SubResource( 1 )
+step = 1.0
+value = 100.0
+script = ExtResource( 3 )
+
+[node name="enemy" parent="." instance=ExtResource( 2 )]
+position = Vector2( 688, 232 )
+scale = Vector2( -6, 6 )
