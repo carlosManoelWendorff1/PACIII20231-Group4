@@ -8,6 +8,7 @@ var number_of_attacks = 0;
 
 var words = ["abacaxi", "amigo", "animal", "arroz", "aventura", "bala", "bolo", "cachorro", "caminho", "carro", "casaco", "cidade", "comida", "corpo", "dia", "dinheiro", "escola", "esporte", "festa", "filme", "frio", "futebol", "gato", "hotel", "jogo", "livro", "loja", "mala", "mar", "musica", "noite", "novo", "oeste", "pao", "papel", "peixe", "pessoa", "praia", "quarto", "roupa", "sapato", "telefone", "tempo", "terra", "trabalho", "universidade", "verao", "viagem", "vida", "voo"];
 
+
 func _get_prompt(number_of_words: int) -> String:
 	var res = "";
 	var is_in_first_word = true;
@@ -46,6 +47,10 @@ func process_input_result(accuracy: float) -> void:
 	number_of_attacks += 1;
 	if(accuracy >= 70):
 		print("Ataque");
+		if(number_of_attacks == 1):
+			
+			SceneTransition.change_scene("res://UI/Battle_result/BattleResultMenu.tscn")
+			
 		# Método de ataque;
 	else:
 		print("Errar");
