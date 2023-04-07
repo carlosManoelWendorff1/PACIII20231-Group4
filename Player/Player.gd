@@ -1,11 +1,15 @@
 extends KinematicBody2D
 
+onready var animation: AnimationPlayer = get_node("Sprite/Animation")
+
 const SPEED = 10000
 var motion = Vector2.ZERO
 var inArea = false
 export var camera_speed = 1
 
 func _physics_process(delta):
+	animate()
+	
 	motion = Vector2.ZERO
 	if Input.is_action_pressed("ui_right"):
 		motion += Vector2(1, 0)
@@ -30,7 +34,10 @@ func _on_Area2DPlayer_area_exited(area):
 	inArea = false
 	print(inArea)
 
-
+func animate() -> void:
+	if motion == Vector2.ZERO:
+		animation.play("iddle")
+	
 func _on_Area2DPlayer_area_entered(area):
 	if Input.is_action_pressed("ui_accept"):
 		print("kkkk")
