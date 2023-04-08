@@ -43,7 +43,7 @@ func show_dialogue() -> void:
 		yield(animation, "animation_finished")
 		emit_signal("finished")
 		queue_free()
-		get_tree().change_scene("res://Cenas/Battle.tscn")
+		get_tree().change_scene("res://Scenes/Battle.tscn")
 		return
 		
 	text_label.percent_visible = 0
