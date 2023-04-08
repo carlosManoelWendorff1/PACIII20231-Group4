@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/AssetsAlternativo/SpritesheetAlt/battle-background.webp" type="Texture" id=1]
+[ext_resource path="res://UI/Lifebar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemy/enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/TextComponent.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=5]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="battle-background" type="Sprite" parent="."]
+position = Vector2( 512, 300 )
+scale = Vector2( 0.975238, 1.11111 )
+texture = ExtResource( 1 )
+
+[node name="TextComponent" parent="." instance=ExtResource( 4 )]
+
+[node name="enemy" parent="." instance=ExtResource( 3 )]
+position = Vector2( 672, 248 )
+scale = Vector2( -7, 7 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( 304, 336 )
+scale = Vector2( 10, 10 )
+script = null
+
+[node name="EnemyLife" parent="." instance=ExtResource( 2 )]
+position = Vector2( 704, 24 )
+NAME = "Enemy"
+
+[node name="PlayerLife" parent="." instance=ExtResource( 2 )]
+position = Vector2( 16, 564 )
+IS_PLAYER = true
+NAME = "Player"
+DEATH_SCENE = "res://UI/Menu.tscn"

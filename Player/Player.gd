@@ -27,7 +27,7 @@ func _physics_process(delta):
 	move_and_slide(motion)
 	if(inArea):
 		print("kkkk")
-		get_tree().change_scene("res://Cenas/DialogueContainer.tscn")
+		get_tree().change_scene("res://Scenes/DialogueContainer.tscn")
 		
 		
 

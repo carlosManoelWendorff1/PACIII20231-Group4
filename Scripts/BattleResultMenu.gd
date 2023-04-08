@@ -2,7 +2,7 @@
 extends Node
 
 func _on_ContinueButton_pressed():
-	SceneTransition.change_scene("res://Cenas/Cena mapa.tscn")
+	SceneTransition.change_scene("res://Scenes/FistStage.tscn")
 	
 func _ready():
 	var continue_button = get_node("VBoxContainer/ContinueButton")

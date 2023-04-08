@@ -38,7 +38,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		if _check_if_side_key(inputEvent, typed_key):
 			return;
 		var next_key = desired_text.substr(letterIndex, 1)
-		if(typed_key == next_key):
+		if(typed_key.to_lower() == next_key):
 			_go_to_next_char(true);
 			rightAnswers += 1
 		else:

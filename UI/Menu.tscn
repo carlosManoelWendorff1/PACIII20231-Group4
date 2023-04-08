@@ -1,10 +1,9 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://UI/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Black.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Bold.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://UI/TextAnimation.gd" type="Script" id=4]
-[ext_resource path="res://UI/Label2.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/TextAnimation.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -22,6 +21,23 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=4]
 size = 70
 font_data = ExtResource( 2 )
+
+[sub_resource type="GDScript" id=5]
+script/source = "extends Label
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -86,7 +102,7 @@ margin_right = 242.32
 margin_bottom = 47.287
 custom_fonts/font = SubResource( 4 )
 text = "|"
-script = ExtResource( 5 )
+script = SubResource( 5 )
 
 [node name="TweenLabel2" type="Tween" parent="Label/Label2"]
 

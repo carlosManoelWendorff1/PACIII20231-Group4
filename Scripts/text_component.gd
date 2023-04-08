@@ -23,7 +23,7 @@ func _get_prompt(number_of_words: int) -> String:
 			is_in_first_word = false;
 		else:
 			res += " "  + word; 
-	return res.substr(0, 1).to_upper() + res.substr(1).to_lower()
+	return res.to_lower()
 
 func start_attack(words: int = 5) -> void:
 	if not inAttack:
