@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/d9spuwer2c491.webp-aa1ea623f0379f24e687fa974bbcfbdd.stex"
+path="res://.import/battle-background.webp-f43e05fc70248118585886b474607135.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/AssetsAlternativo/SpritesheetAlt/d9spuwer2c491.webp"
-dest_files=[ "res://.import/d9spuwer2c491.webp-aa1ea623f0379f24e687fa974bbcfbdd.stex" ]
+source_file="res://Assets/AssetsAlternativo/SpritesheetAlt/battle-background.webp"
+dest_files=[ "res://.import/battle-background.webp-f43e05fc70248118585886b474607135.stex" ]
 
 [params]
 
