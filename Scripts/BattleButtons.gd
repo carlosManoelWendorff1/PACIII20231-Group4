@@ -5,6 +5,9 @@ onready var parent = self.get_parent();
 
 func _ready():
 	text_component = self.get_parent().get_node("TextComponent")
+
+func _start_countdown():
+	$Countdown.start(30.0);
 	
 func _on_Button_pressed():
 	randomize();
