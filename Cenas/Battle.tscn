@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Assets/AssetsAlternativo/DialogueBox/Texboxdefinitivaedecente.png" type="Texture" id=1]
 [ext_resource path="res://enemy/enemy.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Assets/AssetsAlternativo/SpritesheetAlt/battle-background.webp" type="Texture" id=8]
 [ext_resource path="res://Cenas/LifeBar.gd" type="Script" id=9]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Assets/Audio/BGM/Super Castlevania IV OST Stage B Vampire Killer (B 1.mp3" type="AudioStream" id=11]
 
 [sub_resource type="DynamicFont" id=2]
 size = 20
@@ -108,3 +109,7 @@ scale = Vector2( -7, 7 )
 position = Vector2( 304, 336 )
 scale = Vector2( 10, 10 )
 script = null
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+autoplay = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/AssetsAlternativo/DialogueBox/Texboxdefinitivaedecente.png" type="Texture" id=1]
 [ext_resource path="res://Assets/AssetsAlternativo/Fonts/bit_potion.ttf" type="DynamicFontData" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scripts/DialogueContainer.gd" type="Script" id=4]
 [ext_resource path="res://enemy/enemy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/AssetsAlternativo/SpritesheetAlt/battle-background.webp" type="Texture" id=6]
+[ext_resource path="res://Assets/Audio/BGM/Nintendo   Castlevania 1   Stage 1   Vampire Kille.mp3" type="AudioStream" id=7]
 
 [sub_resource type="DynamicFont" id=6]
 size = 60
@@ -109,3 +110,8 @@ anims/fade_out = SubResource( 5 )
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = 6.992
+autoplay = true

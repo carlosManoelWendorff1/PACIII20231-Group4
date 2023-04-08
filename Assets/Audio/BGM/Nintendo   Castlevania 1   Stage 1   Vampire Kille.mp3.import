@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Nintendo   Castlevania 1   Stage 1   Vampire Kille.mp3-2febb57e7a60abf8d77f491f90a5f610.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BGM/Nintendo   Castlevania 1   Stage 1   Vampire Kille.mp3"
+dest_files=[ "res://.import/Nintendo   Castlevania 1   Stage 1   Vampire Kille.mp3-2febb57e7a60abf8d77f491f90a5f610.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
