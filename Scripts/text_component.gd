@@ -7,9 +7,9 @@ var input = null;
 var inAttack = false;
 var accuracy_sum = 0;
 var number_of_attacks = 0;
+onready var parent = self.get_parent();
 
 var words = ["abacaxi", "amigo", "animal", "arroz", "aventura", "bala", "bolo", "cachorro", "caminho", "carro", "casaco", "cidade", "comida", "corpo", "dia", "dinheiro", "escola", "esporte", "festa", "filme", "frio", "futebol", "gato", "hotel", "jogo", "livro", "loja", "mala", "mar", "musica", "noite", "novo", "oeste", "pao", "papel", "peixe", "pessoa", "praia", "quarto", "roupa", "sapato", "telefone", "tempo", "terra", "trabalho", "universidade", "verao", "viagem", "vida", "voo"];
-
 
 func _get_prompt(number_of_words: int) -> String:
 	var res = "";
@@ -24,6 +24,10 @@ func _get_prompt(number_of_words: int) -> String:
 		else:
 			res += " "  + word; 
 	return res.to_lower()
+
+func start(value: int):
+	$Timer.count(value);
+	
 
 func start_attack(words: int = 5) -> void:
 	if not inAttack:
@@ -42,8 +46,6 @@ func _ready():
 	input = get_node("input_text");
 	enemy_life = self.get_parent().get_node("EnemyLife")
 	player_life = self.get_parent().get_node("PlayerLife")
-	# TODO: Remover quando existir um método que inicia o ataque;
-	self.temp();
 
 func process_input_result(accuracy: float) -> void:
 	inAttack = false;
@@ -68,8 +70,7 @@ func process_input_result(accuracy: float) -> void:
 		print("Damage: " + str(damage))
 		player_life.take_damage(damage)
 	input.end();
-	# TODO: Remover quando existir um método que inicia o ataque;
-	self.temp();
+	parent.openMenu();
 
 func get_accuracy() -> float:
 	return accuracy_sum/number_of_attacks;
@@ -77,8 +78,3 @@ func get_accuracy() -> float:
 func end_battle():
 	accuracy_sum = 0;
 	number_of_attacks = 0;
-
-func temp():
-	randomize();
-	var word_index = randi() % 20;
-	start_attack(word_index);
