@@ -7,9 +7,9 @@ var input = null;
 var inAttack = false;
 var accuracy_sum = 0;
 var number_of_attacks = 0;
+onready var parent = self.get_parent();
 
 var words = ["abacaxi", "amigo", "animal", "arroz", "aventura", "bala", "bolo", "cachorro", "caminho", "carro", "casaco", "cidade", "comida", "corpo", "dia", "dinheiro", "escola", "esporte", "festa", "filme", "frio", "futebol", "gato", "hotel", "jogo", "livro", "loja", "mala", "mar", "musica", "noite", "novo", "oeste", "pao", "papel", "peixe", "pessoa", "praia", "quarto", "roupa", "sapato", "telefone", "tempo", "terra", "trabalho", "universidade", "verao", "viagem", "vida", "voo"];
-
 
 func _get_prompt(number_of_words: int) -> String:
 	var res = "";
@@ -24,6 +24,10 @@ func _get_prompt(number_of_words: int) -> String:
 		else:
 			res += " "  + word; 
 	return res.to_lower()
+
+
+func start(value: int):
+	$Timer.count(value);
 
 func start_attack(words: int = 5) -> void:
 	if not inAttack:
@@ -42,43 +46,41 @@ func _ready():
 	input = get_node("input_text");
 	enemy_life = self.get_parent().get_node("EnemyLife")
 	player_life = self.get_parent().get_node("PlayerLife")
-	# TODO: Remover quando existir um método que inicia o ataque;
-	self.temp();
+
+func clear():
+	inAttack = false;
+	input.end();
 
 func process_input_result(accuracy: float) -> void:
 	inAttack = false;
 	accuracy_sum += accuracy;
 	number_of_attacks += 1;
-	if(accuracy >= 70):
-		var damage = randi() % 15 + 15;
-		if(accuracy == 100):
-			damage *=2
-			print("Critical Hit")
-		else:
-			print("Hit")
-		print("Damage: " + str(damage))
-		enemy_life.take_damage(damage)
-	else:
-		var damage = randi() % 15 + 15;
-		if(accuracy == 0):
-			damage *=2
-			print("Critical Miss")
-		else:
-			print("Miss")
-		print("Damage: " + str(damage))
-		player_life.take_damage(damage)
+	var target = null;
+	var multiplier = 1;
 	input.end();
-	# TODO: Remover quando existir um método que inicia o ataque;
-	self.temp();
+	if(accuracy >= 70):
+		target = enemy_life; 
+		if(accuracy == 100):
+			multiplier =2
+		$Timer.message("HIT\nAccuracy: " + str(round_to_dec(accuracy, 2)) + "%");
+		## TODO: Chamar a animação de ataque do player
+	else:
+		target = player_life; 
+		if(accuracy == 0):
+			multiplier =2
+		$Timer.message("MISS\nAccuracy: " + str(round_to_dec(accuracy, 2)) + "%");
+		## TODO: Chamar a animação de ataque do inimigo
+	yield(get_tree().create_timer(1.0), "timeout")
+	var damage = randi() % 15 + 15;
+	target.take_damage(damage * multiplier)
+	parent.openMenu();
 
 func get_accuracy() -> float:
 	return accuracy_sum/number_of_attacks;
 
+func round_to_dec(num, digit):
+	return round(num * pow(10.0, digit)) / pow(10.0, digit)
+
 func end_battle():
 	accuracy_sum = 0;
 	number_of_attacks = 0;
-
-func temp():
-	randomize();
-	var word_index = randi() % 20;
-	start_attack(word_index);
