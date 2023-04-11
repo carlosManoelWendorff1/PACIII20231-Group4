@@ -2,12 +2,13 @@
 
 importer="bitmap"
 type="BitMap"
-path="res://.import/alo.png-ba0e02be499c0c40dc6a01191211c80a.res"
+uid="uid://cxtyy6s1svesi"
+path="res://.godot/imported/alo.png-ba0e02be499c0c40dc6a01191211c80a.res"
 
 [deps]
 
 source_file="res://Assets/Fonts/alo.png"
-dest_files=[ "res://.import/alo.png-ba0e02be499c0c40dc6a01191211c80a.res" ]
+dest_files=["res://.godot/imported/alo.png-ba0e02be499c0c40dc6a01191211c80a.res"]
 
 [params]
 

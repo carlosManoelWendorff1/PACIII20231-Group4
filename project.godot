@@ -6,12 +6,13 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
 [application]
 
 config/name="Pac"
 run/main_scene="res://UI/Menu.tscn"
+config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
 
 [autoload]
@@ -22,7 +23,6 @@ Label2="*res://UI/Label2.gd"
 [display]
 
 window/stretch/mode="2d"
-window/stretch/aspect="keep"
 run/main_scene="res://UI/Menu.tscn"
 config/icon="res://icon.png"
 
@@ -60,4 +60,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/defaults/default_environment="res://default_env.tres"

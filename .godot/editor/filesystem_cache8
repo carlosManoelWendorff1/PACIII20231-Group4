@@ -1,0 +1,622 @@
+2a60927148abd1d33b818b535e306557
+::res://::1681250402
+default_env.tres::Environment::-1::1681250002::0::1::::<><>::
+icon.png::CompressedTexture2D::1569046218505091455::1681249908::1681250037::1::::<><>::
+plugin.gd::GDScript::-1::1681250002::0::1::::<>EditorPlugin<>::
+README.md::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/::1681250037
+License.txt::TextFile::-1::1681249908::0::1::::<><>::
+Preview.png::CompressedTexture2D::3389865757702658374::1681249908::1681250037::1::::<><>::
+Sample1.png::CompressedTexture2D::6303371640863815265::1681249908::1681250037::1::::<><>::
+Sample2.png::CompressedTexture2D::261008841704063160::1681249908::1681250037::1::::<><>::
+Sample.png::CompressedTexture2D::8969634641830696538::1681249908::1681250037::1::::<><>::
+Tilesheet.txt::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/AssetsAlternativo/::1681249908
+::res://Assets/AssetsAlternativo/Button/::1681250038
+Buttons.png::CompressedTexture2D::1837342196455984100::1681249908::1681250038::1::::<><>::
+::res://Assets/AssetsAlternativo/DialogueBox/::1681250038
+Texboxdefinitivaedecente.png::CompressedTexture2D::1624690740671130719::1681249908::1681250038::1::::<><>::
+::res://Assets/AssetsAlternativo/EffectsAlt/::1681250038
+Fireball_68x9.png::CompressedTexture2D::2283957573847213971::1681249908::1681250038::1::::<><>::
+Iceball_84x9.png::CompressedTexture2D::1872713259278915120::1681249908::1681250038::1::::<><>::
+Jumping_Small_Fireball_14x45.png::CompressedTexture2D::6183694112410675942::1681249908::1681250038::1::::<><>::
+Jumping_Small_Iceball_14x41.png::CompressedTexture2D::2364726030071205183::1681249908::1681250038::1::::<><>::
+Jumping_Small_Poisonball_13x40.png::CompressedTexture2D::6951575162450427573::1681249908::1681250038::1::::<><>::
+Poisonball_65x9.png::CompressedTexture2D::9203376643160855705::1681249908::1681250038::1::::<><>::
+Small_Fireball_10x26.png::CompressedTexture2D::8951688887032335593::1681249908::1681250038::1::::<><>::
+Small_Iceball_9x24.png::CompressedTexture2D::6907947892415389543::1681249908::1681250038::1::::<><>::
+Small_Poisonball_9x25.png::CompressedTexture2D::4670976539146435242::1681249908::1681250038::1::::<><>::
+spritesheet.png::CompressedTexture2D::6263984230147282960::1681249908::1681250038::1::::<><>::
+::res://Assets/AssetsAlternativo/EffectsAlt/PNG/::1681250038
+frame0000.png::CompressedTexture2D::6928738723242173542::1681249908::1681250038::1::::<><>::
+frame0001.png::CompressedTexture2D::3822277178253631126::1681249908::1681250038::1::::<><>::
+frame0002.png::CompressedTexture2D::8784978544422166092::1681249908::1681250038::1::::<><>::
+frame0003.png::CompressedTexture2D::780132004835342192::1681249908::1681250038::1::::<><>::
+frame0004.png::CompressedTexture2D::267049736448951804::1681249908::1681250038::1::::<><>::
+frame0005.png::CompressedTexture2D::3384090869837707654::1681249908::1681250038::1::::<><>::
+frame0006.png::CompressedTexture2D::5977165498552480437::1681249908::1681250038::1::::<><>::
+frame0007.png::CompressedTexture2D::4958888851337807948::1681249908::1681250038::1::::<><>::
+frame0008.png::CompressedTexture2D::2984342139879597826::1681249908::1681250038::1::::<><>::
+frame0009.png::CompressedTexture2D::9059603784091227122::1681249908::1681250038::1::::<><>::
+frame0010.png::CompressedTexture2D::8266086722747309580::1681249908::1681250038::1::::<><>::
+frame0011.png::CompressedTexture2D::7281595498056456310::1681249908::1681250038::1::::<><>::
+frame0012.png::CompressedTexture2D::7128114521250636675::1681249908::1681250038::1::::<><>::
+frame0013.png::CompressedTexture2D::3496767727199108546::1681249908::1681250038::1::::<><>::
+frame0014.png::CompressedTexture2D::8911779797301527456::1681249908::1681250038::1::::<><>::
+frame0015.png::CompressedTexture2D::210106884806704699::1681249908::1681250038::1::::<><>::
+frame0016.png::CompressedTexture2D::3110377326341088473::1681249908::1681250038::1::::<><>::
+frame0017.png::CompressedTexture2D::1223808622383089029::1681249908::1681250038::1::::<><>::
+frame0018.png::CompressedTexture2D::4081028618012114346::1681249908::1681250038::1::::<><>::
+frame0019.png::CompressedTexture2D::240543604072755426::1681249908::1681250038::1::::<><>::
+frame0020.png::CompressedTexture2D::7692537044902760788::1681249908::1681250038::1::::<><>::
+frame0021.png::CompressedTexture2D::5590437050925487476::1681249908::1681250038::1::::<><>::
+frame0022.png::CompressedTexture2D::5923417389266594725::1681249908::1681250038::1::::<><>::
+frame0023.png::CompressedTexture2D::3309951793969402553::1681249908::1681250038::1::::<><>::
+frame0024.png::CompressedTexture2D::1267704264518048683::1681249908::1681250038::1::::<><>::
+frame0025.png::CompressedTexture2D::374067430006250853::1681249908::1681250038::1::::<><>::
+frame0026.png::CompressedTexture2D::8379855254311553364::1681249908::1681250038::1::::<><>::
+frame0027.png::CompressedTexture2D::3603919666047582919::1681249908::1681250038::1::::<><>::
+frame0028.png::CompressedTexture2D::6823657862592029622::1681249908::1681250038::1::::<><>::
+frame0029.png::CompressedTexture2D::3114640411100165835::1681249908::1681250038::1::::<><>::
+frame0030.png::CompressedTexture2D::6444155018793414776::1681249908::1681250038::1::::<><>::
+frame0031.png::CompressedTexture2D::5573824720948058970::1681249908::1681250038::1::::<><>::
+frame0032.png::CompressedTexture2D::8234152204620028195::1681249908::1681250038::1::::<><>::
+frame0033.png::CompressedTexture2D::1107006145855615820::1681249908::1681250038::1::::<><>::
+frame0034.png::CompressedTexture2D::7944109857839728884::1681249908::1681250038::1::::<><>::
+frame0035.png::CompressedTexture2D::8439379351700296160::1681249908::1681250038::1::::<><>::
+frame0036.png::CompressedTexture2D::2304466967899802260::1681249908::1681250038::1::::<><>::
+frame0037.png::CompressedTexture2D::3006707479774800151::1681249908::1681250038::1::::<><>::
+frame0038.png::CompressedTexture2D::1015256867909759253::1681249908::1681250038::1::::<><>::
+frame0039.png::CompressedTexture2D::3326275057627432406::1681249908::1681250038::1::::<><>::
+frame0040.png::CompressedTexture2D::2519708138363311578::1681249908::1681250038::1::::<><>::
+frame0041.png::CompressedTexture2D::879386468886131632::1681249908::1681250038::1::::<><>::
+frame0042.png::CompressedTexture2D::3582889945812786112::1681249908::1681250038::1::::<><>::
+frame0043.png::CompressedTexture2D::3253329528880412456::1681249908::1681250038::1::::<><>::
+frame0044.png::CompressedTexture2D::937707526623713369::1681249908::1681250038::1::::<><>::
+frame0045.png::CompressedTexture2D::5536555847185803147::1681249908::1681250038::1::::<><>::
+frame0046.png::CompressedTexture2D::5270041487128460491::1681249908::1681250038::1::::<><>::
+frame0047.png::CompressedTexture2D::575288049059604964::1681249908::1681250038::1::::<><>::
+frame0048.png::CompressedTexture2D::7707485113441031263::1681249908::1681250038::1::::<><>::
+frame0049.png::CompressedTexture2D::1534556040605515909::1681249908::1681250038::1::::<><>::
+frame0050.png::CompressedTexture2D::8372323096509354355::1681249908::1681250038::1::::<><>::
+frame0051.png::CompressedTexture2D::3232841300593726490::1681249908::1681250038::1::::<><>::
+frame0052.png::CompressedTexture2D::2984484873284526099::1681249908::1681250038::1::::<><>::
+frame0053.png::CompressedTexture2D::370613197961984549::1681249908::1681250038::1::::<><>::
+frame0054.png::CompressedTexture2D::928648050502235144::1681249908::1681250038::1::::<><>::
+frame0055.png::CompressedTexture2D::532088856525516259::1681249908::1681250038::1::::<><>::
+frame0056.png::CompressedTexture2D::1885574988870098025::1681249908::1681250038::1::::<><>::
+frame0057.png::CompressedTexture2D::6662315966720180097::1681249908::1681250038::1::::<><>::
+frame0058.png::CompressedTexture2D::4494640207169427229::1681249908::1681250038::1::::<><>::
+frame0059.png::CompressedTexture2D::4212762184401803888::1681249908::1681250038::1::::<><>::
+frame0060.png::CompressedTexture2D::248543028149600438::1681249908::1681250038::1::::<><>::
+frame0061.png::CompressedTexture2D::3022549941527898591::1681249908::1681250038::1::::<><>::
+frame0062.png::CompressedTexture2D::3307631203153470676::1681249908::1681250038::1::::<><>::
+frame0063.png::CompressedTexture2D::6778154399627703104::1681249908::1681250038::1::::<><>::
+frame0064.png::CompressedTexture2D::2571184229170345920::1681249908::1681250038::1::::<><>::
+frame0065.png::CompressedTexture2D::1385594362246329720::1681249908::1681250038::1::::<><>::
+frame0066.png::CompressedTexture2D::5411724955756582227::1681249908::1681250038::1::::<><>::
+frame0067.png::CompressedTexture2D::7988450559908467274::1681249908::1681250038::1::::<><>::
+frame0068.png::CompressedTexture2D::6774835370451883729::1681249908::1681250038::1::::<><>::
+frame0069.png::CompressedTexture2D::6897272791739944046::1681249908::1681250038::1::::<><>::
+frame0070.png::CompressedTexture2D::915460229569043745::1681249908::1681250038::1::::<><>::
+::res://Assets/AssetsAlternativo/Fonts/::1681250037
+bit_potion.ttf::FontFile::111000367337877970::1681249908::1681250037::1::::<><>::
+ChiKareGo2.ttf::FontFile::7200344125120652152::1681249908::1681250037::1::::<><>::
+thaleah_fat.ttf::FontFile::6079088635423522773::1681249908::1681250037::1::::<><>::
+::res://Assets/AssetsAlternativo/SpritesheetAlt/::1681250038
+AnimationSheet_Character.png::CompressedTexture2D::133638641278385152::1681249908::1681250038::1::::<><>::
+battle-background.webp::CompressedTexture2D::6095295173550832957::1681249908::1681250038::1::::<><>::
+enemy.png::CompressedTexture2D::5985426736375991283::1681249908::1681250038::1::::<><>::
+mago.png::CompressedTexture2D::3712826117492709856::1681249908::1681250038::1::::<><>::
+::res://Assets/AssetsAlternativo/TileMapAlt/::1681250038
+0x72_DungeonTilesetII_v1.3.png::CompressedTexture2D::1436318999410403758::1681249908::1681250038::1::::<><>::
+::res://Assets/Fonts/::1681250011
+alo.png::BitMap::6427909672504734980::1681249908::1681250011::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/::1681250038
+icon.png::CompressedTexture2D::5580742630752864183::1681249908::1681250038::1::::<><>::
+README.md::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/::1681250038
+overview.PNG::CompressedTexture2D::8669537107839244667::1681249908::1681250038::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/architect-s-daughter/::1681250037
+Architects Daughter SIL OFL Font License.txt::TextFile::-1::1681249908::0::1::::<><>::
+ArchitectsDaughter32.tres::FontFile::-1::1681250002::0::1::::<><>::res://fonts/architect-s-daughter/ArchitectsDaughter.ttf
+ArchitectsDaughter.ttf::FontFile::5014909153083990264::1681249908::1681250037::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/cmu-typewriter/::1681249908
+Typewriter.tres::FontFile::-1::1681250002::0::1::::<><>::res://fonts/cmu-typewriter/Typewriter/cmuntt.ttf
+::res://Assets/Fonts/gd-fontpack/fonts/cmu-typewriter/Typewriter/::1681250037
+cmunit.ttf::FontFile::6964617570389682814::1681249908::1681250037::1::::<><>::
+cmuntb.ttf::FontFile::7406396092003129548::1681249908::1681250037::1::::<><>::
+cmuntt.ttf::FontFile::905710586012946523::1681249908::1681250037::1::::<><>::
+cmuntx.ttf::FontFile::3751436567878260107::1681249908::1681250037::1::::<><>::
+OFL-FAQ.txt::TextFile::-1::1681249908::0::1::::<><>::
+OFL.txt::TextFile::-1::1681249908::0::1::::<><>::
+README.txt::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/connection/::1681250037
+Connection.otf::FontFile::2486695161456104357::1681249908::1681250037::1::::<><>::
+ConnectionBold.otf::FontFile::3106034400483413403::1681249908::1681250037::1::::<><>::
+SIL Open Font License.txt::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/connection_ii/::1681250037
+ConnectionII.otf::FontFile::4658906064424119984::1681249908::1681250037::1::::<><>::
+ConnectionII.tres::FontFile::-1::1681250002::0::1::::<><>::res://fonts/connection_ii/ConnectionII.otf
+SIL Open Font License.txt::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/droid-sans/::1681250037
+Apache License.txt::TextFile::-1::1681249908::0::1::::<><>::
+DroidSans-Bold.ttf::FontFile::8684730574889190692::1681249908::1681250037::1::::<><>::
+DroidSans.tres::FontFile::-1::1681250002::0::1::::<><>::res://fonts/droid-sans/DroidSans.ttf
+DroidSans.ttf::FontFile::3602841632175369391::1681249908::1681250037::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/kirifont/::1681250037
+KiriFont.otf::FontFile::6185095421895632178::1681249908::1681250037::1::::<><>::
+Kirifont.tres::FontFile::-1::1681250002::0::1::::<><>::res://fonts/kirifont/KiriFont.otf
+KiriFont.ttf::FontFile::5581310279045227126::1681249908::1681250037::1::::<><>::
+OFL.txt::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/linux-libertine/::1681249908
+LinuxLibertine.tres::FontFile::-1::1681250002::0::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/linux-libertine/LinLibertine_5.3.0_2012_07_02/::1681249908
+::res://Assets/Fonts/gd-fontpack/fonts/linux-libertine/LinLibertine_5.3.0_2012_07_02/LinLibertineOTF_5.3.0_2012_07_02/::1681250037
+Bugs.txt::TextFile::-1::1681249908::0::1::::<><>::
+ChangeLog.txt::TextFile::-1::1681249908::0::1::::<><>::
+GPL.txt::TextFile::-1::1681249908::0::1::::<><>::
+INSTALL.txt::TextFile::-1::1681249908::0::1::::<><>::
+LICENCE.txt::TextFile::-1::1681249908::0::1::::<><>::
+LinLibertine_DR.otf::FontFile::3732702042204174049::1681249908::1681250037::1::::<><>::
+LinLibertine_I.otf::FontFile::2965792148826885796::1681249908::1681250037::1::::<><>::
+LinLibertine_M.otf::FontFile::6200686619720675648::1681249908::1681250037::1::::<><>::
+LinLibertine_R.otf::FontFile::8134469001501059538::1681249908::1681250037::1::::<><>::
+LinLibertine_RB.otf::FontFile::6155551472588179061::1681249908::1681250037::1::::<><>::
+LinLibertine_RBI.otf::FontFile::7618155817393119561::1681249908::1681250037::1::::<><>::
+LinLibertine_RI.otf::FontFile::6056551856580395780::1681249908::1681250037::1::::<><>::
+LinLibertine_RZ.otf::FontFile::399687666062879533::1681249908::1681250037::1::::<><>::
+LinLibertine_RZI.otf::FontFile::7111997054768196281::1681249908::1681250037::1::::<><>::
+OFL-1.1.txt::TextFile::-1::1681249908::0::1::::<><>::
+Readme-TEX.txt::TextFile::-1::1681249908::0::1::::<><>::
+ToDo.txt::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/montreal/::1681250011
+Montreal-Bold.ttf::FontFile::7206742672451960953::1681249908::1681250011::1::::<><>::
+Montreal-Regular.ttf::FontFile::4613686324157304961::1681249908::1681250011::1::::<><>::
+Montreal.tres::FontFile::-1::1681250002::0::1::::<><>::res://fonts/montreal/Montreal-Regular.ttf
+OFL.txt::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/poco/::1681250011
+CC BY 4.0.txt::TextFile::-1::1681249908::0::1::::<><>::
+Poco.tres::FontFile::-1::1681250002::0::1::::<><>::res://fonts/poco/Poco.ttf
+Poco.ttf::FontFile::8986358729755055140::1681249908::1681250011::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/::1681249908
+SourceCodePro.tres::FontFile::-1::1681250002::0::1::::<><>::res://fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Regular.ttf
+::res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/::1681249908
+LICENSE.txt::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/::1681250037
+SourceCodePro-Black.ttf::FontFile::8925881506553935130::1681249908::1681250037::1::::<><>::
+SourceCodePro-BlackIt.ttf::FontFile::5768003639444830339::1681249908::1681250011::1::::<><>::
+SourceCodePro-Bold.ttf::FontFile::7083610431849428327::1681249908::1681250011::1::::<><>::
+SourceCodePro-BoldIt.ttf::FontFile::6812232595285604076::1681249908::1681250011::1::::<><>::
+SourceCodePro-ExtraLight.ttf::FontFile::1019644911260876464::1681249908::1681250011::1::::<><>::
+SourceCodePro-ExtraLightIt.ttf::FontFile::5467932214632245389::1681249908::1681250011::1::::<><>::
+SourceCodePro-It.ttf::FontFile::7587391607890517738::1681249908::1681250011::1::::<><>::
+SourceCodePro-Light.ttf::FontFile::7343201799960695400::1681249908::1681250011::1::::<><>::
+SourceCodePro-LightIt.ttf::FontFile::9056405000756018340::1681249908::1681250011::1::::<><>::
+SourceCodePro-Medium.ttf::FontFile::5787270129954696034::1681249908::1681250037::1::::<><>::
+SourceCodePro-MediumIt.ttf::FontFile::7867935667066836683::1681249908::1681250011::1::::<><>::
+SourceCodePro-Regular.ttf::FontFile::3357788359925427405::1681249908::1681250011::1::::<><>::
+SourceCodePro-Semibold.ttf::FontFile::9117482490677910519::1681249908::1681250037::1::::<><>::
+SourceCodePro-SemiboldIt.ttf::FontFile::1099277885525848590::1681249908::1681250037::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/xolonium/::1681249908
+Xolonium.tres::FontFile::-1::1681250002::0::1::::<><>::res://fonts/xolonium/xolonium-fonts-4.1/ttf/Xolonium-Regular.ttf
+::res://Assets/Fonts/gd-fontpack/fonts/xolonium/xolonium-fonts-4.1/::1681249908
+FONTLOG.txt::TextFile::-1::1681249908::0::1::::<><>::
+LICENSE.txt::TextFile::-1::1681249908::0::1::::<><>::
+::res://Assets/Fonts/gd-fontpack/fonts/xolonium/xolonium-fonts-4.1/ttf/::1681250037
+Xolonium-Bold.ttf::FontFile::6929714852836901402::1681249908::1681250037::1::::<><>::
+Xolonium-Regular.ttf::FontFile::7747314946986852192::1681249908::1681250037::1::::<><>::
+::res://Assets/PNG/::1681249908
+::res://Assets/PNG/Blue/::1681250038
+characterBlue (1).png::CompressedTexture2D::7556715070149284152::1681249908::1681250038::1::::<><>::
+characterBlue (2).png::CompressedTexture2D::8888511482379827660::1681249908::1681250038::1::::<><>::
+characterBlue (3).png::CompressedTexture2D::6333410576128654236::1681249908::1681250038::1::::<><>::
+characterBlue (4).png::CompressedTexture2D::57308897014182473::1681249908::1681250038::1::::<><>::
+characterBlue (5).png::CompressedTexture2D::2248181070017907777::1681249908::1681250038::1::::<><>::
+characterBlue (6).png::CompressedTexture2D::4921894478386969826::1681249908::1681250038::1::::<><>::
+characterBlue (7).png::CompressedTexture2D::3428855194377974491::1681249908::1681250038::1::::<><>::
+characterBlue (8).png::CompressedTexture2D::462818873371165926::1681249908::1681250038::1::::<><>::
+characterBlue (9).png::CompressedTexture2D::67520298106768639::1681249908::1681250038::1::::<><>::
+characterBlue (10).png::CompressedTexture2D::7437074662517459225::1681249908::1681250038::1::::<><>::
+characterBlue (11).png::CompressedTexture2D::6705102510655509306::1681249908::1681250038::1::::<><>::
+characterBlue (12).png::CompressedTexture2D::5042645730689511008::1681249908::1681250038::1::::<><>::
+characterBlue (13).png::CompressedTexture2D::8859566513698893030::1681249908::1681250038::1::::<><>::
+characterBlue (14).png::CompressedTexture2D::6179689253431331804::1681249908::1681250038::1::::<><>::
+::res://Assets/PNG/Elements/::1681250038
+element (1).png::CompressedTexture2D::4113328027081655111::1681249908::1681250038::1::::<><>::
+element (2).png::CompressedTexture2D::6245014553710901397::1681249908::1681250038::1::::<><>::
+element (3).png::CompressedTexture2D::2250314483289686053::1681249908::1681250038::1::::<><>::
+element (4).png::CompressedTexture2D::3884489184232822822::1681249908::1681250038::1::::<><>::
+element (5).png::CompressedTexture2D::3786689997137712505::1681249908::1681250038::1::::<><>::
+element (6).png::CompressedTexture2D::3696925573608839906::1681249908::1681250038::1::::<><>::
+element (7).png::CompressedTexture2D::2841117162937337258::1681249908::1681250038::1::::<><>::
+element (8).png::CompressedTexture2D::7614012227859434808::1681249908::1681250038::1::::<><>::
+element (9).png::CompressedTexture2D::803569146169498190::1681249908::1681250038::1::::<><>::
+element (10).png::CompressedTexture2D::4164639174543449779::1681249908::1681250038::1::::<><>::
+element (11).png::CompressedTexture2D::8957247469342780889::1681249908::1681250038::1::::<><>::
+element (12).png::CompressedTexture2D::8579935545245590132::1681249908::1681250038::1::::<><>::
+element (13).png::CompressedTexture2D::8449252786967798777::1681249908::1681250038::1::::<><>::
+element (14).png::CompressedTexture2D::2971362001069275978::1681249908::1681250038::1::::<><>::
+element (15).png::CompressedTexture2D::8205322856482785927::1681249908::1681250038::1::::<><>::
+element (16).png::CompressedTexture2D::7905030647541350687::1681249908::1681250038::1::::<><>::
+element (17).png::CompressedTexture2D::9010903237644046777::1681249908::1681250038::1::::<><>::
+element (18).png::CompressedTexture2D::3533484972142591970::1681249908::1681250038::1::::<><>::
+element (19).png::CompressedTexture2D::4484404434415068936::1681249908::1681250038::1::::<><>::
+element (20).png::CompressedTexture2D::992030374184633255::1681249908::1681250038::1::::<><>::
+element (21).png::CompressedTexture2D::1342364929719214427::1681249908::1681250038::1::::<><>::
+element (22).png::CompressedTexture2D::8557755970140258259::1681249908::1681250038::1::::<><>::
+element (23).png::CompressedTexture2D::5636209754907514994::1681249908::1681250038::1::::<><>::
+element (24).png::CompressedTexture2D::8512800293448988968::1681249908::1681250038::1::::<><>::
+element (25).png::CompressedTexture2D::838591905445746150::1681249908::1681250038::1::::<><>::
+element (26).png::CompressedTexture2D::8432102944760946541::1681249908::1681250038::1::::<><>::
+element (27).png::CompressedTexture2D::7856293509775027551::1681249908::1681250038::1::::<><>::
+element (28).png::CompressedTexture2D::4776376364181843207::1681249908::1681250038::1::::<><>::
+element (29).png::CompressedTexture2D::7878053048672099142::1681249908::1681250038::1::::<><>::
+element (30).png::CompressedTexture2D::6017676608494308129::1681249908::1681250038::1::::<><>::
+element (31).png::CompressedTexture2D::24405599372203741::1681249908::1681250038::1::::<><>::
+element (32).png::CompressedTexture2D::8041289248637827793::1681249908::1681250038::1::::<><>::
+element (33).png::CompressedTexture2D::9201489389284218358::1681249908::1681250038::1::::<><>::
+element (34).png::CompressedTexture2D::3948584731786352641::1681249908::1681250038::1::::<><>::
+element (35).png::CompressedTexture2D::8865892746898121020::1681249908::1681250038::1::::<><>::
+element (36).png::CompressedTexture2D::3550074899453662054::1681249908::1681250038::1::::<><>::
+element (37).png::CompressedTexture2D::8495302868795389779::1681249908::1681250038::1::::<><>::
+element (38).png::CompressedTexture2D::7499916799516257127::1681249908::1681250038::1::::<><>::
+element (39).png::CompressedTexture2D::7236013423323339437::1681249908::1681250038::1::::<><>::
+element (40).png::CompressedTexture2D::9096530597606444892::1681249908::1681250038::1::::<><>::
+element (41).png::CompressedTexture2D::1885181284547667424::1681249908::1681250038::1::::<><>::
+element (42).png::CompressedTexture2D::2360629499381989647::1681249908::1681250038::1::::<><>::
+element (43).png::CompressedTexture2D::4702619821963525154::1681249908::1681250038::1::::<><>::
+element (44).png::CompressedTexture2D::5606735286278396176::1681249908::1681250038::1::::<><>::
+element (45).png::CompressedTexture2D::7648924758520676982::1681249908::1681250038::1::::<><>::
+element (46).png::CompressedTexture2D::1642258270913628396::1681249908::1681250038::1::::<><>::
+element (47).png::CompressedTexture2D::6112158504060513747::1681249908::1681250038::1::::<><>::
+element (48).png::CompressedTexture2D::9070211711093405866::1681249908::1681250038::1::::<><>::
+element (49).png::CompressedTexture2D::8765874930873905189::1681249908::1681250038::1::::<><>::
+element (50).png::CompressedTexture2D::8512246440938840476::1681249908::1681250038::1::::<><>::
+element (51).png::CompressedTexture2D::4947492752323932814::1681249908::1681250038::1::::<><>::
+element (52).png::CompressedTexture2D::515753077377356619::1681249908::1681250038::1::::<><>::
+element (53).png::CompressedTexture2D::3077508080601727433::1681249908::1681250038::1::::<><>::
+element (54).png::CompressedTexture2D::2177972566268308671::1681249908::1681250038::1::::<><>::
+element (55).png::CompressedTexture2D::4670080323869553579::1681249908::1681250038::1::::<><>::
+element (56).png::CompressedTexture2D::8112917706687275852::1681249908::1681250038::1::::<><>::
+element (57).png::CompressedTexture2D::3470522563655211090::1681249908::1681250038::1::::<><>::
+element (58).png::CompressedTexture2D::3020002466998126186::1681249908::1681250038::1::::<><>::
+element (59).png::CompressedTexture2D::6543173886670349605::1681249908::1681250038::1::::<><>::
+element (60).png::CompressedTexture2D::1994467979248894729::1681249908::1681250038::1::::<><>::
+element (61).png::CompressedTexture2D::2344498977678067743::1681249908::1681250038::1::::<><>::
+element (62).png::CompressedTexture2D::7385349948333841905::1681249908::1681250038::1::::<><>::
+element (63).png::CompressedTexture2D::1143004178740623665::1681249908::1681250038::1::::<><>::
+element (64).png::CompressedTexture2D::765464482664487125::1681249908::1681250038::1::::<><>::
+element (65).png::CompressedTexture2D::1343498106937228261::1681249908::1681250038::1::::<><>::
+element (66).png::CompressedTexture2D::2150255456234933703::1681249908::1681250038::1::::<><>::
+element (67).png::CompressedTexture2D::3268607328315776648::1681249908::1681250038::1::::<><>::
+element (68).png::CompressedTexture2D::3467294999459094689::1681249908::1681250038::1::::<><>::
+element (69).png::CompressedTexture2D::3885911240538871086::1681249908::1681250038::1::::<><>::
+element (70).png::CompressedTexture2D::7653242213673253144::1681249908::1681250038::1::::<><>::
+element (71).png::CompressedTexture2D::8998095705865052888::1681249908::1681250038::1::::<><>::
+element (72).png::CompressedTexture2D::2630773697884736642::1681249908::1681250038::1::::<><>::
+element (73).png::CompressedTexture2D::4004687836321826286::1681249908::1681250038::1::::<><>::
+element (74).png::CompressedTexture2D::5260504241498998097::1681249908::1681250038::1::::<><>::
+element (75).png::CompressedTexture2D::8935662159488150799::1681249908::1681250038::1::::<><>::
+element (76).png::CompressedTexture2D::3019702180159941410::1681249908::1681250038::1::::<><>::
+element (77).png::CompressedTexture2D::2857195693047082777::1681249908::1681250038::1::::<><>::
+element (78).png::CompressedTexture2D::2247835341052931410::1681249908::1681250038::1::::<><>::
+element (79).png::CompressedTexture2D::6409750130135462845::1681249908::1681250038::1::::<><>::
+element (80).png::CompressedTexture2D::1795064652949572923::1681249908::1681250038::1::::<><>::
+element (81).png::CompressedTexture2D::2579131218401676987::1681249908::1681250038::1::::<><>::
+::res://Assets/PNG/Equipment/::1681250038
+ball_basket1.png::CompressedTexture2D::9133673359055399134::1681249908::1681250038::1::::<><>::
+ball_basket2.png::CompressedTexture2D::9016163005408017989::1681249908::1681250038::1::::<><>::
+ball_basket3.png::CompressedTexture2D::5155506797612721260::1681249908::1681250038::1::::<><>::
+ball_basket4.png::CompressedTexture2D::7499956806641805063::1681249908::1681250038::1::::<><>::
+ball_bowling1.png::CompressedTexture2D::7430902790802943278::1681249908::1681250038::1::::<><>::
+ball_bowling2.png::CompressedTexture2D::8708767575852395594::1681249908::1681250038::1::::<><>::
+ball_bowling3.png::CompressedTexture2D::2262346615989936413::1681249908::1681250038::1::::<><>::
+ball_football.png::CompressedTexture2D::3152904745476443825::1681249908::1681250038::1::::<><>::
+ball_generic1.png::CompressedTexture2D::3200976578880483228::1681249908::1681250038::1::::<><>::
+ball_generic2.png::CompressedTexture2D::891514178593884494::1681249908::1681250038::1::::<><>::
+ball_golf.png::CompressedTexture2D::401343613682630561::1681249908::1681250038::1::::<><>::
+ball_puck.png::CompressedTexture2D::7861268345010794525::1681249908::1681250038::1::::<><>::
+ball_soccer1.png::CompressedTexture2D::247922880259132160::1681249908::1681250038::1::::<><>::
+ball_soccer2.png::CompressedTexture2D::3832465473396107453::1681249908::1681250038::1::::<><>::
+ball_soccer3.png::CompressedTexture2D::2576093329890131532::1681249908::1681250038::1::::<><>::
+ball_soccer4.png::CompressedTexture2D::501393806284003320::1681249908::1681250038::1::::<><>::
+ball_tennis1.png::CompressedTexture2D::8975935233331258544::1681249908::1681250038::1::::<><>::
+ball_tennis2.png::CompressedTexture2D::3348863636477796479::1681249908::1681250038::1::::<><>::
+ball_volley1.png::CompressedTexture2D::8110465401038247776::1681249908::1681250038::1::::<><>::
+ball_volley2.png::CompressedTexture2D::155401756651712534::1681249908::1681250038::1::::<><>::
+bat_handle.png::CompressedTexture2D::6919028936098396295::1681249908::1681250038::1::::<><>::
+bat_metal.png::CompressedTexture2D::3549790793375466829::1681249908::1681250038::1::::<><>::
+bat_wood.png::CompressedTexture2D::6255840344312381093::1681249908::1681250038::1::::<><>::
+boxing_glove.png::CompressedTexture2D::5092009001343601280::1681249908::1681250038::1::::<><>::
+card_red.png::CompressedTexture2D::6353743781766523949::1681249908::1681250038::1::::<><>::
+card_white.png::CompressedTexture2D::5739445322078939918::1681249908::1681250038::1::::<><>::
+card_yellow.png::CompressedTexture2D::1189357007436081882::1681249908::1681250038::1::::<><>::
+flag_black.png::CompressedTexture2D::6636071307070011370::1681249908::1681250038::1::::<><>::
+flag_checkered.png::CompressedTexture2D::6965347154356587846::1681249908::1681250038::1::::<><>::
+flag_green.png::CompressedTexture2D::966344792239701512::1681249908::1681250038::1::::<><>::
+flag_white.png::CompressedTexture2D::8260290620503252238::1681249908::1681250038::1::::<><>::
+golf_club.png::CompressedTexture2D::7591501184447841068::1681249908::1681250038::1::::<><>::
+helmet_white1.png::CompressedTexture2D::2042888437737669839::1681249908::1681250038::1::::<><>::
+helmet_white2.png::CompressedTexture2D::380182081680082016::1681249908::1681250038::1::::<><>::
+helmet_white3.png::CompressedTexture2D::6504463780152363394::1681249908::1681250038::1::::<><>::
+racket_handle.png::CompressedTexture2D::1662954906573294085::1681249908::1681250038::1::::<><>::
+racket_metal.png::CompressedTexture2D::3594656046731596317::1681249908::1681250038::1::::<><>::
+racket_wood.png::CompressedTexture2D::2388150193426225813::1681249908::1681250038::1::::<><>::
+::res://Assets/PNG/Green/::1681250037
+characterGreen (1).png::CompressedTexture2D::8175842779259936552::1681249908::1681250037::1::::<><>::
+characterGreen (2).png::CompressedTexture2D::8109022116231167592::1681249908::1681250037::1::::<><>::
+characterGreen (3).png::CompressedTexture2D::8895496764594860189::1681249908::1681250037::1::::<><>::
+characterGreen (4).png::CompressedTexture2D::227695289474586817::1681249908::1681250037::1::::<><>::
+characterGreen (5).png::CompressedTexture2D::1369194327498347268::1681249908::1681250037::1::::<><>::
+characterGreen (6).png::CompressedTexture2D::470401016082452325::1681249908::1681250037::1::::<><>::
+characterGreen (7).png::CompressedTexture2D::1798804271362676358::1681249908::1681250037::1::::<><>::
+characterGreen (8).png::CompressedTexture2D::3400988952029008248::1681249908::1681250037::1::::<><>::
+characterGreen (9).png::CompressedTexture2D::6158702343368725155::1681249908::1681250037::1::::<><>::
+characterGreen (10).png::CompressedTexture2D::4796347156337883137::1681249908::1681250037::1::::<><>::
+characterGreen (11).png::CompressedTexture2D::1024194619951866188::1681249908::1681250037::1::::<><>::
+characterGreen (12).png::CompressedTexture2D::3132394360053621875::1681249908::1681250037::1::::<><>::
+characterGreen (13).png::CompressedTexture2D::8664400765111179908::1681249908::1681250037::1::::<><>::
+characterGreen (14).png::CompressedTexture2D::604087152695745028::1681249908::1681250037::1::::<><>::
+::res://Assets/PNG/Red/::1681250037
+characterRed (1).png::CompressedTexture2D::7032497457485611192::1681249908::1681250037::1::::<><>::
+characterRed (2).png::CompressedTexture2D::5739500077780376005::1681249908::1681250037::1::::<><>::
+characterRed (3).png::CompressedTexture2D::4218605083581688006::1681249908::1681250037::1::::<><>::
+characterRed (4).png::CompressedTexture2D::1084749935471818713::1681249908::1681250037::1::::<><>::
+characterRed (5).png::CompressedTexture2D::5259026667885416650::1681249908::1681250037::1::::<><>::
+characterRed (6).png::CompressedTexture2D::8380258631409675079::1681249908::1681250037::1::::<><>::
+characterRed (7).png::CompressedTexture2D::5969203691905800803::1681249908::1681250037::1::::<><>::
+characterRed (8).png::CompressedTexture2D::5708665461865898061::1681249908::1681250037::1::::<><>::
+characterRed (9).png::CompressedTexture2D::4273442176826084785::1681249908::1681250037::1::::<><>::
+characterRed (10).png::CompressedTexture2D::5349448302251312244::1681249908::1681250037::1::::<><>::
+characterRed (11).png::CompressedTexture2D::1785034587108904441::1681249908::1681250037::1::::<><>::
+characterRed (12).png::CompressedTexture2D::6350374713652981910::1681249908::1681250037::1::::<><>::
+characterRed (13).png::CompressedTexture2D::4793693458956169720::1681249908::1681250037::1::::<><>::
+characterRed (14).png::CompressedTexture2D::4315097772664808376::1681249908::1681250037::1::::<><>::
+::res://Assets/PNG/Special/::1681250037
+characterSpecial (1).png::CompressedTexture2D::5646655303468575933::1681249908::1681250037::1::::<><>::
+characterSpecial (2).png::CompressedTexture2D::1705899065095002172::1681249908::1681250037::1::::<><>::
+characterSpecial (3).png::CompressedTexture2D::3021843785213276877::1681249908::1681250037::1::::<><>::
+characterSpecial (4).png::CompressedTexture2D::1295403903408724188::1681249908::1681250037::1::::<><>::
+characterSpecial (5).png::CompressedTexture2D::5557760494156184401::1681249908::1681250037::1::::<><>::
+characterSpecial (6).png::CompressedTexture2D::1873187417065798251::1681249908::1681250037::1::::<><>::
+characterSpecial (7).png::CompressedTexture2D::5857328998028409411::1681249908::1681250037::1::::<><>::
+characterSpecial (8).png::CompressedTexture2D::6187319126402325764::1681249908::1681250037::1::::<><>::
+characterSpecial (9).png::CompressedTexture2D::6048188677480681435::1681249908::1681250037::1::::<><>::
+characterSpecial (10).png::CompressedTexture2D::822176624661210189::1681249908::1681250037::1::::<><>::
+characterSpecial (11).png::CompressedTexture2D::2431188162185170612::1681249908::1681250037::1::::<><>::
+characterSpecial (12).png::CompressedTexture2D::7794036501123408303::1681249908::1681250037::1::::<><>::
+::res://Assets/PNG/White/::1681250037
+characterWhite (1).png::CompressedTexture2D::3553085181795671000::1681249908::1681250037::1::::<><>::
+characterWhite (2).png::CompressedTexture2D::1456988851015258625::1681249908::1681250037::1::::<><>::
+characterWhite (3).png::CompressedTexture2D::5647921652164397094::1681249908::1681250037::1::::<><>::
+characterWhite (4).png::CompressedTexture2D::2958260592122849841::1681249908::1681250037::1::::<><>::
+characterWhite (5).png::CompressedTexture2D::6885354801998597543::1681249908::1681250037::1::::<><>::
+characterWhite (6).png::CompressedTexture2D::581221074501078456::1681249908::1681250037::1::::<><>::
+characterWhite (7).png::CompressedTexture2D::5360909734368016232::1681249908::1681250037::1::::<><>::
+characterWhite (8).png::CompressedTexture2D::3421925509683755284::1681249908::1681250037::1::::<><>::
+characterWhite (9).png::CompressedTexture2D::15701994784178983::1681249908::1681250037::1::::<><>::
+characterWhite (10).png::CompressedTexture2D::5973722763064556966::1681249908::1681250037::1::::<><>::
+characterWhite (11).png::CompressedTexture2D::4390858062114709627::1681249908::1681250037::1::::<><>::
+characterWhite (12).png::CompressedTexture2D::4614674640081328607::1681249908::1681250037::1::::<><>::
+characterWhite (13).png::CompressedTexture2D::2003926044954150700::1681249908::1681250037::1::::<><>::
+characterWhite (14).png::CompressedTexture2D::8191009990587304286::1681249908::1681250037::1::::<><>::
+::res://Assets/Spritesheet/::1681250037
+sheet_characters.png::CompressedTexture2D::6684247520895276495::1681249908::1681250037::1::::<><>::
+sheet_charactersEquipment.png::CompressedTexture2D::4888128711896777041::1681249908::1681250037::1::::<><>::
+sheet_equipment.png::CompressedTexture2D::8110854480441197400::1681249908::1681250037::1::::<><>::
+::res://Assets/Tiled/::1681249908
+::res://Assets/Tilemap/::1681250037
+tilemap.png::CompressedTexture2D::2230179377897179062::1681249908::1681250037::1::::<><>::
+tilemap_packed.png::CompressedTexture2D::1037875861155463327::1681249908::1681250037::1::::<><>::
+::res://Assets/Tiles/::1681250038
+TileMap.tres::TileSet::-1::1681250002::0::1::::<><>::res://Assets/Sample.png<>res://Assets/Tilesheet/groundGrass_mownWide.png<>res://Assets/Tilemap/tilemap.png<>res://Assets/Tilemap/tilemap_packed.png
+tile_0000.png::CompressedTexture2D::6011124497559407477::1681249908::1681250037::1::::<><>::
+tile_0001.png::CompressedTexture2D::7209409650925100898::1681249908::1681250037::1::::<><>::
+tile_0002.png::CompressedTexture2D::2174899063453127442::1681249908::1681250037::1::::<><>::
+tile_0003.png::CompressedTexture2D::1650477800797943492::1681249908::1681250037::1::::<><>::
+tile_0004.png::CompressedTexture2D::8447386773597466942::1681249908::1681250037::1::::<><>::
+tile_0005.png::CompressedTexture2D::3147079580767954014::1681249908::1681250037::1::::<><>::
+tile_0006.png::CompressedTexture2D::2054044565755587837::1681249908::1681250037::1::::<><>::
+tile_0007.png::CompressedTexture2D::2564415979006859350::1681249908::1681250037::1::::<><>::
+tile_0008.png::CompressedTexture2D::7158069296316146202::1681249908::1681250037::1::::<><>::
+tile_0009.png::CompressedTexture2D::6972137218114116439::1681249908::1681250037::1::::<><>::
+tile_0010.png::CompressedTexture2D::7480783146032530259::1681249908::1681250037::1::::<><>::
+tile_0011.png::CompressedTexture2D::1988926313765687690::1681249908::1681250037::1::::<><>::
+tile_0012.png::CompressedTexture2D::4997240241083967264::1681249908::1681250037::1::::<><>::
+tile_0013.png::CompressedTexture2D::6797628242978880355::1681249908::1681250037::1::::<><>::
+tile_0014.png::CompressedTexture2D::2236233755933668287::1681249908::1681250037::1::::<><>::
+tile_0015.png::CompressedTexture2D::1933869507485103806::1681249908::1681250037::1::::<><>::
+tile_0016.png::CompressedTexture2D::1585734886459896188::1681249908::1681250037::1::::<><>::
+tile_0017.png::CompressedTexture2D::2499648297263989037::1681249908::1681250037::1::::<><>::
+tile_0018.png::CompressedTexture2D::3778498437830404609::1681249908::1681250037::1::::<><>::
+tile_0019.png::CompressedTexture2D::8154572604938997132::1681249908::1681250037::1::::<><>::
+tile_0020.png::CompressedTexture2D::1600644759658161376::1681249908::1681250037::1::::<><>::
+tile_0021.png::CompressedTexture2D::3709141258083320797::1681249908::1681250037::1::::<><>::
+tile_0022.png::CompressedTexture2D::4929834500800605994::1681249908::1681250037::1::::<><>::
+tile_0023.png::CompressedTexture2D::6738073367142461343::1681249908::1681250037::1::::<><>::
+tile_0024.png::CompressedTexture2D::8962574121006625830::1681249908::1681250037::1::::<><>::
+tile_0025.png::CompressedTexture2D::5139391421515283254::1681249908::1681250037::1::::<><>::
+tile_0026.png::CompressedTexture2D::1956609643544512754::1681249908::1681250037::1::::<><>::
+tile_0027.png::CompressedTexture2D::5819659124246907105::1681249908::1681250037::1::::<><>::
+tile_0028.png::CompressedTexture2D::3271059445651604512::1681249908::1681250037::1::::<><>::
+tile_0029.png::CompressedTexture2D::553721404354841798::1681249908::1681250037::1::::<><>::
+tile_0030.png::CompressedTexture2D::2785412471480061476::1681249908::1681250037::1::::<><>::
+tile_0031.png::CompressedTexture2D::2329078268152377481::1681249908::1681250037::1::::<><>::
+tile_0032.png::CompressedTexture2D::3061092894148670964::1681249908::1681250037::1::::<><>::
+tile_0033.png::CompressedTexture2D::7408766217723320091::1681249908::1681250037::1::::<><>::
+tile_0034.png::CompressedTexture2D::8017607302111945999::1681249908::1681250037::1::::<><>::
+tile_0035.png::CompressedTexture2D::4298247591733848122::1681249908::1681250037::1::::<><>::
+tile_0036.png::CompressedTexture2D::5835949427311809341::1681249908::1681250037::1::::<><>::
+tile_0037.png::CompressedTexture2D::8714797970559304775::1681249908::1681250037::1::::<><>::
+tile_0038.png::CompressedTexture2D::4941632998947566360::1681249908::1681250037::1::::<><>::
+tile_0039.png::CompressedTexture2D::3456002156782928937::1681249908::1681250037::1::::<><>::
+tile_0040.png::CompressedTexture2D::657285917585677979::1681249908::1681250037::1::::<><>::
+tile_0041.png::CompressedTexture2D::838970833669540024::1681249908::1681250037::1::::<><>::
+tile_0042.png::CompressedTexture2D::56081251852867019::1681249908::1681250037::1::::<><>::
+tile_0043.png::CompressedTexture2D::311204596605453866::1681249908::1681250037::1::::<><>::
+tile_0044.png::CompressedTexture2D::8925437601038593973::1681249908::1681250037::1::::<><>::
+tile_0045.png::CompressedTexture2D::1012444479879029119::1681249908::1681250037::1::::<><>::
+tile_0046.png::CompressedTexture2D::2185297107404229707::1681249908::1681250037::1::::<><>::
+tile_0047.png::CompressedTexture2D::5716101287897646737::1681249908::1681250037::1::::<><>::
+tile_0048.png::CompressedTexture2D::8765456743100101716::1681249908::1681250037::1::::<><>::
+tile_0049.png::CompressedTexture2D::7946454827640727116::1681249908::1681250037::1::::<><>::
+tile_0050.png::CompressedTexture2D::4425554686201518013::1681249908::1681250037::1::::<><>::
+tile_0051.png::CompressedTexture2D::1678425083779998185::1681249908::1681250037::1::::<><>::
+tile_0052.png::CompressedTexture2D::6397120479358179698::1681249908::1681250038::1::::<><>::
+tile_0053.png::CompressedTexture2D::1882715196514079448::1681249908::1681250038::1::::<><>::
+tile_0054.png::CompressedTexture2D::8191857879928152285::1681249908::1681250038::1::::<><>::
+tile_0055.png::CompressedTexture2D::3014704273067988944::1681249908::1681250038::1::::<><>::
+tile_0056.png::CompressedTexture2D::1437351929187246303::1681249908::1681250038::1::::<><>::
+tile_0057.png::CompressedTexture2D::1784849479548778255::1681249908::1681250038::1::::<><>::
+tile_0058.png::CompressedTexture2D::1342399564715235748::1681249908::1681250038::1::::<><>::
+tile_0059.png::CompressedTexture2D::5000618364459921265::1681249908::1681250038::1::::<><>::
+tile_0060.png::CompressedTexture2D::270385295817623777::1681249908::1681250038::1::::<><>::
+tile_0061.png::CompressedTexture2D::7355408563529745079::1681249908::1681250038::1::::<><>::
+tile_0062.png::CompressedTexture2D::5765151757169586226::1681249908::1681250038::1::::<><>::
+tile_0063.png::CompressedTexture2D::6700600815934466334::1681249908::1681250038::1::::<><>::
+tile_0064.png::CompressedTexture2D::6289708173893915391::1681249908::1681250038::1::::<><>::
+tile_0065.png::CompressedTexture2D::7056520300269894299::1681249908::1681250038::1::::<><>::
+tile_0066.png::CompressedTexture2D::4006172099507033420::1681249908::1681250038::1::::<><>::
+tile_0067.png::CompressedTexture2D::7614677710202509595::1681249908::1681250038::1::::<><>::
+tile_0068.png::CompressedTexture2D::4074808920470673764::1681249908::1681250038::1::::<><>::
+tile_0069.png::CompressedTexture2D::657286482987984104::1681249908::1681250038::1::::<><>::
+tile_0070.png::CompressedTexture2D::4152994202601082117::1681249908::1681250038::1::::<><>::
+tile_0071.png::CompressedTexture2D::553281688472876714::1681249908::1681250038::1::::<><>::
+tile_0072.png::CompressedTexture2D::2720613181413558040::1681249908::1681250038::1::::<><>::
+tile_0073.png::CompressedTexture2D::117773593123794416::1681249908::1681250038::1::::<><>::
+tile_0074.png::CompressedTexture2D::5212933115791307073::1681249908::1681250038::1::::<><>::
+tile_0075.png::CompressedTexture2D::3633051904587332054::1681249908::1681250038::1::::<><>::
+tile_0076.png::CompressedTexture2D::7929862528789504035::1681249908::1681250038::1::::<><>::
+tile_0077.png::CompressedTexture2D::7860102344469516867::1681249908::1681250038::1::::<><>::
+tile_0078.png::CompressedTexture2D::8177430407797674463::1681249908::1681250038::1::::<><>::
+tile_0079.png::CompressedTexture2D::4026792069806111696::1681249908::1681250038::1::::<><>::
+tile_0080.png::CompressedTexture2D::8569234217707547874::1681249908::1681250038::1::::<><>::
+tile_0081.png::CompressedTexture2D::5106048691881271085::1681249908::1681250038::1::::<><>::
+tile_0082.png::CompressedTexture2D::4397634984999375404::1681249908::1681250038::1::::<><>::
+tile_0083.png::CompressedTexture2D::7124644362800783103::1681249908::1681250038::1::::<><>::
+tile_0084.png::CompressedTexture2D::4572236137255033743::1681249908::1681250038::1::::<><>::
+tile_0085.png::CompressedTexture2D::8866074000431102031::1681249908::1681250038::1::::<><>::
+tile_0086.png::CompressedTexture2D::3164297694618269644::1681249908::1681250038::1::::<><>::
+tile_0087.png::CompressedTexture2D::285821395261255350::1681249908::1681250038::1::::<><>::
+tile_0088.png::CompressedTexture2D::4734054129693082163::1681249908::1681250038::1::::<><>::
+tile_0089.png::CompressedTexture2D::6928596170756403238::1681249908::1681250038::1::::<><>::
+tile_0090.png::CompressedTexture2D::1592810024337033145::1681249908::1681250038::1::::<><>::
+tile_0091.png::CompressedTexture2D::7912737034223409009::1681249908::1681250038::1::::<><>::
+tile_0092.png::CompressedTexture2D::3942303356150205017::1681249908::1681250038::1::::<><>::
+tile_0093.png::CompressedTexture2D::4936250149919249223::1681249908::1681250038::1::::<><>::
+tile_0094.png::CompressedTexture2D::3222125523773137845::1681249908::1681250038::1::::<><>::
+tile_0095.png::CompressedTexture2D::6005389505518045580::1681249908::1681250038::1::::<><>::
+tile_0096.png::CompressedTexture2D::4056814604154501137::1681249908::1681250038::1::::<><>::
+tile_0097.png::CompressedTexture2D::942270654588450932::1681249908::1681250038::1::::<><>::
+tile_0098.png::CompressedTexture2D::6355308989646460297::1681249908::1681250038::1::::<><>::
+tile_0099.png::CompressedTexture2D::5442725700837117290::1681249908::1681250038::1::::<><>::
+tile_0100.png::CompressedTexture2D::2369698810831187484::1681249908::1681250038::1::::<><>::
+tile_0101.png::CompressedTexture2D::4658562778954007494::1681249908::1681250038::1::::<><>::
+tile_0102.png::CompressedTexture2D::4942849527653830245::1681249908::1681250038::1::::<><>::
+tile_0103.png::CompressedTexture2D::5096770608745812514::1681249908::1681250038::1::::<><>::
+tile_0104.png::CompressedTexture2D::1383027121871700112::1681249908::1681250038::1::::<><>::
+tile_0105.png::CompressedTexture2D::6374890903660199205::1681249908::1681250038::1::::<><>::
+tile_0106.png::CompressedTexture2D::7906781153436191726::1681249908::1681250038::1::::<><>::
+tile_0107.png::CompressedTexture2D::6096606541645407423::1681249908::1681250038::1::::<><>::
+tile_0108.png::CompressedTexture2D::1452314878689202668::1681249908::1681250037::1::::<><>::
+tile_0109.png::CompressedTexture2D::3712020225654446286::1681249908::1681250037::1::::<><>::
+tile_0110.png::CompressedTexture2D::9085022141842326852::1681249908::1681250037::1::::<><>::
+tile_0111.png::CompressedTexture2D::9020483449410245695::1681249908::1681250037::1::::<><>::
+tile_0112.png::CompressedTexture2D::99538449211650659::1681249908::1681250037::1::::<><>::
+tile_0113.png::CompressedTexture2D::6614235672308569200::1681249908::1681250037::1::::<><>::
+tile_0114.png::CompressedTexture2D::3000540629740526094::1681249908::1681250037::1::::<><>::
+tile_0115.png::CompressedTexture2D::4571975531043876801::1681249908::1681250037::1::::<><>::
+tile_0116.png::CompressedTexture2D::440065239123741463::1681249908::1681250037::1::::<><>::
+tile_0117.png::CompressedTexture2D::5211145352216809972::1681249908::1681250037::1::::<><>::
+tile_0118.png::CompressedTexture2D::3292310890627665397::1681249908::1681250037::1::::<><>::
+tile_0119.png::CompressedTexture2D::6994815603752710537::1681249908::1681250037::1::::<><>::
+tile_0120.png::CompressedTexture2D::4897015816503376961::1681249908::1681250037::1::::<><>::
+tile_0121.png::CompressedTexture2D::6668580852835665941::1681249908::1681250037::1::::<><>::
+tile_0122.png::CompressedTexture2D::3571884672254692513::1681249908::1681250037::1::::<><>::
+tile_0123.png::CompressedTexture2D::6297371563778851182::1681249908::1681250037::1::::<><>::
+tile_0124.png::CompressedTexture2D::1619944124020050841::1681249908::1681250037::1::::<><>::
+tile_0125.png::CompressedTexture2D::3552188994272185874::1681249908::1681250037::1::::<><>::
+tile_0126.png::CompressedTexture2D::2001777102711496685::1681249908::1681250037::1::::<><>::
+tile_0127.png::CompressedTexture2D::7088176754021796364::1681249908::1681250037::1::::<><>::
+tile_0128.png::CompressedTexture2D::8081853324397037470::1681249908::1681250037::1::::<><>::
+tile_0129.png::CompressedTexture2D::7840025896794955091::1681249908::1681250037::1::::<><>::
+tile_0130.png::CompressedTexture2D::8609643071325704637::1681249908::1681250037::1::::<><>::
+tile_0131.png::CompressedTexture2D::3261981252496446770::1681249908::1681250037::1::::<><>::
+::res://Assets/Tilesheet/::1681250038
+elements.png::CompressedTexture2D::1099098663110972571::1681249908::1681250037::1::::<><>::
+groundBeige_blue.png::CompressedTexture2D::5081022989029183020::1681249908::1681250037::1::::<><>::
+groundBeige_red.png::CompressedTexture2D::5605890500647403831::1681249908::1681250037::1::::<><>::
+groundBeige_white.png::CompressedTexture2D::2602098248550618577::1681249908::1681250037::1::::<><>::
+groundGrass.png::CompressedTexture2D::7092910290943667709::1681249908::1681250038::1::::<><>::
+groundGrass_mown.png::CompressedTexture2D::1067251351011929934::1681249908::1681250038::1::::<><>::
+groundGrass_mownWide.png::CompressedTexture2D::3259973891879942297::1681249908::1681250038::1::::<><>::
+groundGravel.png::CompressedTexture2D::3415561348699765607::1681249908::1681250038::1::::<><>::
+groundIce_blue.png::CompressedTexture2D::6416824353405700702::1681249908::1681250038::1::::<><>::
+groundIce_red.png::CompressedTexture2D::486469075796060550::1681249908::1681250038::1::::<><>::
+groundTarmac.png::CompressedTexture2D::4598927804614426298::1681249908::1681250038::1::::<><>::
+groundTransparent_black.png::CompressedTexture2D::3553842662656633429::1681249908::1681250038::1::::<><>::
+groundTransparent_white.png::CompressedTexture2D::4164015184450156267::1681249908::1681250038::1::::<><>::
+::res://Assets/Vector/::1681250038
+charactersEquipment.svg::CompressedTexture2D::5005077470273516959::1681249908::1681250038::1::::<><>::
+elements.svg::CompressedTexture2D::7685762782399463279::1681249908::1681250038::1::::<><>::
+groundBeige_blue.svg::CompressedTexture2D::8482644296186975672::1681249908::1681250038::1::::<><>::
+groundBeige_red.svg::CompressedTexture2D::5538403039554146622::1681249908::1681250038::1::::<><>::
+groundBeige_white.svg::CompressedTexture2D::7367342395010978474::1681249908::1681250038::1::::<><>::
+groundGrass_mownWide_vector.svg::CompressedTexture2D::3098757392099989465::1681249908::1681250038::1::::<><>::
+groundGrass_mown_vector.svg::CompressedTexture2D::5811045379111050739::1681249908::1681250038::1::::<><>::
+groundGrass_vector.svg::CompressedTexture2D::6571193202197276083::1681249908::1681250037::1::::<><>::
+groundGravel.svg::CompressedTexture2D::4166220413355245043::1681249908::1681250037::1::::<><>::
+groundIce_blue.svg::CompressedTexture2D::2268325230750205021::1681249908::1681250037::1::::<><>::
+groundIce_red.svg::CompressedTexture2D::4459763075558561716::1681249908::1681250037::1::::<><>::
+groundTarmac.svg::CompressedTexture2D::6347305369886880898::1681249908::1681250037::1::::<><>::
+groundTransparent_black.svg::CompressedTexture2D::936658060751347747::1681249908::1681250037::1::::<><>::
+groundTransparent_white.svg::CompressedTexture2D::373241383171942085::1681249908::1681250037::1::::<><>::
+::res://enemy/::1681249908
+enemy.gd::GDScript::-1::1681250002::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/AssetsAlternativo/SpritesheetAlt/enemy.png<>res://enemy/enemy.gd
+::res://Objetos/::1681249908
+Bola.tscn::PackedScene::-1::1681250002::0::1::::<><>::
+door.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/Tiles/tile_0089.png<>res://Scripts/door.gd
+enemy.gd::GDScript::-1::1681250002::0::1::::<>CharacterBody2D<>::
+EnemyLife.gd::GDScript::-1::1681249908::0::1::::<>RefCounted<>::
+Walls.tscn::PackedScene::-1::1681250002::0::1::::<><>::
+::res://Player/::1681249908
+Area2D.gd::GDScript::-1::1681250002::0::1::::<>Area2D<>::
+Camera2D.gd::GDScript::-1::1681250002::0::1::::<>Camera2D<>::
+Player.gd::GDScript::-1::1681250002::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Player/Player.gd<>res://Assets/AssetsAlternativo/SpritesheetAlt/mago.png<>res://Player/Area2D.gd
+::res://Scenes/::1681249908
+AttackTimer.gd::GDScript::-1::1681250002::0::1::::<>Timer<>::
+Battle.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/AssetsAlternativo/SpritesheetAlt/battle-background.webp<>res://UI/Lifebar.tscn<>res://enemy/enemy.tscn<>res://UI/TextComponent.tscn<>res://Player/Player.tscn<>res://Scripts/BattleButtons.gd<>res://Assets/AssetsAlternativo/Button/Buttons.png<>res://Assets/AssetsAlternativo/Fonts/ChiKareGo2.ttf<>res://Scripts/Battle.gd<>res://Scenes/Countdown.gd
+BattleResultMenu.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/AssetsAlternativo/Fonts/ChiKareGo2.ttf<>res://Scripts/BattleResultMenu.gd
+Countdown.gd::GDScript::-1::1681250002::0::1::::<>Control<>::
+DialogueContainer.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/AssetsAlternativo/DialogueBox/Texboxdefinitivaedecente.png<>res://Assets/AssetsAlternativo/Fonts/bit_potion.ttf<>res://Assets/AssetsAlternativo/Fonts/thaleah_fat.ttf<>res://Scripts/DialogueContainer.gd<>res://enemy/enemy.tscn<>res://Assets/AssetsAlternativo/SpritesheetAlt/battle-background.webp
+FistStage.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/AssetsAlternativo/TileMapAlt/0x72_DungeonTilesetII_v1.3.png<>res://enemy/enemy.tscn<>res://Objetos/Walls.tscn<>res://Scenes/TileWall.tscn<>res://Scenes/TilePort.tscn<>res://Objetos/door.tscn<>res://Player/Player.tscn<>res://Scenes/objects.tscn
+objects.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/AssetsAlternativo/TileMapAlt/0x72_DungeonTilesetII_v1.3.png
+SecondStage.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/AssetsAlternativo/TileMapAlt/0x72_DungeonTilesetII_v1.3.png<>res://Scenes/TilePort.tscn<>res://Player/Player.tscn<>res://Scenes/TileWall.tscn
+TilePort.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/AssetsAlternativo/TileMapAlt/0x72_DungeonTilesetII_v1.3.png
+TileWall.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/AssetsAlternativo/TileMapAlt/0x72_DungeonTilesetII_v1.3.png<>res://Assets/Vector/charactersEquipment.svg
+::res://Scripts/::1681250312
+Battle.gd::GDScript::-1::1681250002::0::1::::<>Node2D<>::
+BattleButtons.gd::GDScript::-1::1681250002::0::1::::<>Control<>::
+BattleResultMenu.gd::GDScript::-1::1681250002::0::1::::<>Node<>::
+cameraPlayer.gd::GDScript::-1::1681250002::0::1::::<>Camera2D<>::
+DialogueContainer.gd::GDScript::-1::1681250002::0::1::::<>Control<>::
+door.gd::GDScript::-1::1681250002::0::1::::<>Node2D<>::
+Input.gd::GDScript::-1::1681250002::0::1::::<>RichTextLabel<>::
+Lifebar.gd::GDScript::-1::1681250002::0::1::::<>Node2D<>::
+Menu.gd::GDScript::-1::1681250002::0::1::::<>Control<>::
+SceneTransition.gd::GDScript::-1::1681250002::0::1::::<>CanvasLayer<>::
+TextAnimation.gd::GDScript::-1::1681250002::0::1::::<>Label<>::
+text_component.gd::GDScript::-1::1681250312::0::1::::<>Control<>::
+Timer.gd::GDScript::-1::1681250002::0::1::::<>RichTextLabel<>::
+::res://tilemap/::1681249908
+TileMap2.tscn::PackedScene::-1::1681250002::0::1::::<><>::
+TileMap.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/Tiles/TileMap.tres
+::res://UI/::1681249908
+Lifebar.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Scripts/Lifebar.gd<>res://Assets/AssetsAlternativo/Fonts/thaleah_fat.ttf<>res://Assets/AssetsAlternativo/Fonts/ChiKareGo2.ttf
+Menu.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Scripts/Menu.gd<>res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Black.ttf<>res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Bold.ttf<>res://Scripts/TextAnimation.gd
+SceneTransition.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Scripts/SceneTransition.gd
+scene_transition.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Scripts/SceneTransition.gd
+TextComponent.tscn::PackedScene::-1::1681250002::0::1::::<><>::res://Assets/AssetsAlternativo/DialogueBox/Texboxdefinitivaedecente.png<>res://Scripts/text_component.gd<>res://Scripts/Input.gd<>res://Assets/AssetsAlternativo/Fonts/thaleah_fat.ttf<>res://Scripts/Timer.gd<>res://Assets/AssetsAlternativo/Fonts/ChiKareGo2.ttf

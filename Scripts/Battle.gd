@@ -31,13 +31,13 @@ func run():
 	var chance = randi() % 10 + 1; 
 	if chance == 1:
 		$TextComponent/Timer.message("Successful scape!");
-		yield(get_tree().create_timer(1.0), "timeout")
-		SceneTransition.change_scene("res://Scenes/FistStage.tscn")
+		await get_tree().create_timer(1.0).timeout
+		SceneTransition.change_scene_to_file("res://Scenes/FistStage.tscn")
 	else:
 		var damage = randi() % 15 + 15;
 		$TextComponent/Timer.message("Failed to run!");
 		## TODO: Chamar a animação de ataque do inimigo
-		yield(get_tree().create_timer(1.0), "timeout")
+		await get_tree().create_timer(1.0).timeout
 		$PlayerLife.take_damage(damage)
 	$BattleButtons.visible = true;
 	$TextComponent.visible = false;
@@ -48,7 +48,7 @@ func attack_timeout():
 	$TextComponent.clear();
 	$TextComponent/Timer.message("Attack timeout!");
 	## TODO: Chamar a animação de ataque do inimigo
-	yield(get_tree().create_timer(1.0), "timeout")
+	await get_tree().create_timer(1.0).timeout
 	$PlayerLife.take_damage(damage)
 	$BattleButtons.visible = true;
 	$TextComponent.visible = false;

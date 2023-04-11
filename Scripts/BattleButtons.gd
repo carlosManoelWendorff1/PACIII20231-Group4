@@ -1,7 +1,7 @@
 extends Control
 
 var text_component = null;
-onready var parent = self.get_parent();
+@onready var parent = self.get_parent();
 
 func _ready():
 	text_component = self.get_parent().get_node("TextComponent")

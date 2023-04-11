@@ -9,22 +9,26 @@ var accuracy_sum = 0;
 var number_of_attacks = 0;
 onready var parent = self.get_parent();
 
-var words = ["abacaxi", "amigo", "animal", "arroz", "aventura", "bala", "bolo", "cachorro", "caminho", "carro", "casaco", "cidade", "comida", "corpo", "dia", "dinheiro", "escola", "esporte", "festa", "filme", "frio", "futebol", "gato", "hotel", "jogo", "livro", "loja", "mala", "mar", "musica", "noite", "novo", "oeste", "pao", "papel", "peixe", "pessoa", "praia", "quarto", "roupa", "sapato", "telefone", "tempo", "terra", "trabalho", "universidade", "verao", "viagem", "vida", "voo"];
+func _get_prompt(number_of_words: int) -> void:
+	var http_request = HTTPRequest.new()
+	http_request.connect("request_completed", self, "_http_request_completed")
+	var response = http_request.request("https://random-word-api.vercel.app/api?words=" + str(number_of_words))
+	if response != OK:
+		push_error("An error occurred in the HTTP request.")
+		
 
-func _get_prompt(number_of_words: int) -> String:
-	var res = "";
-	var is_in_first_word = true;
-	randomize();
-	for n in number_of_words:
-		var word_index = randi() % words.size()
-		var word = words[word_index]
-		if is_in_first_word:
-			res = word; 
-			is_in_first_word = false;
-		else:
-			res += " "  + word; 
-	return res.to_lower()
+func _http_request_completed(result, response_code, headers, body: PackedByteArray):
+	var words = []
 
+	if(response_code == 200):
+		var json = parse_json(body.get_string_from_utf8())
+		if json != null and json.size() > 0:
+			for i in json:
+				words.append(i)
+		return " ".join(words)
+	else:
+		print('response_code: ', response_code)
+		print('problem on the server')
 
 func start(value: int):
 	$Timer.count(value);

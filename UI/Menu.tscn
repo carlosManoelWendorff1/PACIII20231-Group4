@@ -1,28 +1,59 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=10 format=3 uid="uid://c81r1afbryg2a"]
 
-[ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Black.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Bold.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Scripts/TextAnimation.gd" type="Script" id=4]
+[ext_resource type="Script" path="res://Scripts/Menu.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://d0f07103wpi4i" path="res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Black.ttf" id="2"]
+[ext_resource type="FontFile" uid="uid://c76ma8ni5oc7p" path="res://Assets/Fonts/gd-fontpack/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Bold.ttf" id="3"]
+[ext_resource type="Script" path="res://Scripts/TextAnimation.gd" id="4"]
 
-[sub_resource type="DynamicFont" id=1]
-size = 40
-font_data = ExtResource( 3 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("3")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="DynamicFont" id=2]
-size = 40
-font_data = ExtResource( 3 )
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("3")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="DynamicFont" id=3]
-size = 80
-use_filter = true
-font_data = ExtResource( 2 )
+[sub_resource type="FontFile" id="3"]
+fallbacks = Array[Font]([ExtResource("2")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="DynamicFont" id=4]
-size = 70
-font_data = ExtResource( 2 )
+[sub_resource type="FontFile" id="4"]
+fallbacks = Array[Font]([ExtResource("2")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="GDScript" id=5]
+[sub_resource type="GDScript" id="5"]
 script/source = "extends Label
 
 
@@ -40,71 +71,86 @@ func _ready():
 "
 
 [node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( -444, 0 )
-script = ExtResource( 1 )
+pivot_offset = Vector2(-444, 0)
+script = ExtResource("1")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
-color = Color( 0, 0.0493164, 0.0625, 1 )
+color = Color(0, 0.0493164, 0.0625, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 48.0
-margin_top = -171.0
-margin_right = 156.0
-margin_bottom = -53.0
+offset_left = 48.0
+offset_top = -171.0
+offset_right = 156.0
+offset_bottom = -53.0
 
 [node name="PlayButton" type="Button" parent="VBoxContainer"]
-margin_right = 108.0
-margin_bottom = 57.0
-custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
-custom_colors/font_color_focus = Color( 0.0941176, 1, 0, 1 )
-custom_fonts/font = SubResource( 1 )
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.0941176, 1, 0, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("1")
 text = "Play"
 flat = true
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
-margin_top = 61.0
-margin_right = 108.0
-margin_bottom = 118.0
-custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
-custom_colors/font_color_focus = Color( 0.0941176, 1, 0, 1 )
-custom_fonts/font = SubResource( 2 )
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.0941176, 1, 0, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("2")
 text = "Quit"
 flat = true
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 0
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -332.0
-margin_top = 92.0
-margin_right = 292.0
-margin_bottom = 193.0
-custom_fonts/font = SubResource( 3 )
+offset_left = -332.0
+offset_top = 92.0
+offset_right = 292.0
+offset_bottom = 193.0
+theme_override_fonts/font = SubResource("3")
 text = "Typing Titans"
-script = ExtResource( 4 )
+script = ExtResource("4")
 
 [node name="TweenLabel" type="Tween" parent="Label"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+editor_description = ""
+script = null
 
 [node name="Label2" type="Label" parent="Label"]
+layout_mode = 0
 anchor_left = 0.68
 anchor_top = 0.413
 anchor_right = 0.68
 anchor_bottom = 0.413
-margin_left = 200.32
-margin_top = -41.713
-margin_right = 242.32
-margin_bottom = 47.287
-custom_fonts/font = SubResource( 4 )
+offset_left = 200.32
+offset_top = -41.713
+offset_right = 242.32
+offset_bottom = 47.287
+theme_override_fonts/font = SubResource("4")
 text = "|"
-script = SubResource( 5 )
+script = SubResource("5")
 
 [node name="TweenLabel2" type="Tween" parent="Label/Label2"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+editor_description = ""
+script = null
 
 [connection signal="focus_entered" from="VBoxContainer/PlayButton" to="." method="_on_PlayButton_focus_entered"]
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_PlayButton_pressed"]

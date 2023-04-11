@@ -1,11 +1,11 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
-onready var animation: AnimationPlayer = get_node("Sprite/Animation")
+@onready var animation: AnimationPlayer = get_node("Sprite2D/Animation")
 
 const SPEED = 10000
 var motion = Vector2.ZERO
 var inArea = false
-export var camera_speed = 1
+@export var camera_speed = 1
 
 func _physics_process(delta):
 	animate()
@@ -13,27 +13,28 @@ func _physics_process(delta):
 	motion = Vector2.ZERO
 	if Input.is_action_pressed("ui_right"):
 		motion += Vector2(1, 0)
-		$Sprite.flip_h = false
+		$Sprite2D.flip_h = false
 	if Input.is_action_pressed("ui_down"):
 		motion += Vector2(0, 1)
 
 	if Input.is_action_pressed("ui_left"):
 		motion += Vector2(-1, 0)
-		$Sprite.flip_h = true
+		$Sprite2D.flip_h = true
 	if Input.is_action_pressed("ui_up"):
 		motion += Vector2(0, -1)
 
 	motion = motion.normalized() * SPEED * delta
-	move_and_slide(motion)
+	set_velocity(motion)
+	move_and_slide()
 	if(inArea):
 		print("kkkk")
-		get_tree().change_scene("res://Scenes/DialogueContainer.tscn")
+		get_tree().change_scene_to_file("res://Scenes/DialogueContainer.tscn")
 		
 		
 
 func _process(delta):
 	if(Input.is_action_just_released("ui_cancel")):
-		SceneTransition.change_scene("res://UI/Menu.tscn")
+		SceneTransition.change_scene_to_file("res://UI/Menu.tscn")
 	
 func _on_Area2DPlayer_area_exited(area):
 	print("desencostou {}",area) # Replace with function body.

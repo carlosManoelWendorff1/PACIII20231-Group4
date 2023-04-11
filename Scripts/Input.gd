@@ -34,7 +34,7 @@ func _ready():
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.is_pressed() and not event.is_echo() and running and letterIndex < desired_text.length():
 		var inputEvent = event as InputEventKey
-		var typed_key = PoolByteArray([inputEvent.unicode]).get_string_from_utf8()
+		var typed_key = PackedByteArray([inputEvent.unicode]).get_string_from_utf8()
 		if _check_if_side_key(inputEvent, typed_key):
 			return;
 		var next_key = desired_text.substr(letterIndex, 1)
@@ -48,7 +48,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			manager.process_input_result(accuracy);
 
 func _check_if_side_key(event: InputEventKey, typed_key: String) -> bool:
-	return typed_key == "" and event.scancode != KEY_SPACE;
+	return typed_key == "" and event.keycode != KEY_SPACE;
 
 func _init_text():
 	letterIndex = 0;
