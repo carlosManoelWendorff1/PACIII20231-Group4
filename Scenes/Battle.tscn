@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/AssetsAlternativo/SpritesheetAlt/battle-background.webp" type="Texture" id=1]
 [ext_resource path="res://UI/Lifebar.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Assets/AssetsAlternativo/Fonts/ChiKareGo2.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://Scripts/Battle.gd" type="Script" id=9]
 [ext_resource path="res://Scenes/Countdown.gd" type="Script" id=10]
+[ext_resource path="res://Assets/Audio/BGM/Super Castlevania IV OST Stage B Vampire Killer (B 1.mp3" type="AudioStream" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -134,6 +135,11 @@ process_mode = 0
 margin_right = 40.0
 margin_bottom = 40.0
 custom_fonts/normal_font = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -2.0
+autoplay = true
 
 [connection signal="pressed" from="BattleButtons/AttackButton" to="BattleButtons" method="_on_Button_pressed"]
 [connection signal="pressed" from="BattleButtons/RunButton" to="BattleButtons" method="_on_RunButton_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Super Castlevania IV OST Stage 3 The Cave (3 1.mp3-d562dd11f99dd474c7a80abe7a671896.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BGM/Super Castlevania IV OST Stage 3 The Cave (3 1.mp3"
+dest_files=[ "res://.import/Super Castlevania IV OST Stage 3 The Cave (3 1.mp3-d562dd11f99dd474c7a80abe7a671896.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
