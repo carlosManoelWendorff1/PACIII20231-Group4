@@ -9,24 +9,36 @@ var accuracy_sum = 0;
 var number_of_attacks = 0;
 onready var parent = self.get_parent();
 
-var words = ["abacaxi", "amigo", "animal", "arroz", "aventura", "bala", "bolo", "cachorro", "caminho", "carro", "casaco", "cidade", "comida", "corpo", "dia", "dinheiro", "escola", "esporte", "festa", "filme", "frio", "futebol", "gato", "hotel", "jogo", "livro", "loja", "mala", "mar", "musica", "noite", "novo", "oeste", "pao", "papel", "peixe", "pessoa", "praia", "quarto", "roupa", "sapato", "telefone", "tempo", "terra", "trabalho", "universidade", "verao", "viagem", "vida", "voo"];
+var text = ""
 
-func _get_prompt(number_of_words: int) -> String:
-	var res = "";
-	var is_in_first_word = true;
-	randomize();
-	for n in number_of_words:
-		var word_index = randi() % words.size()
-		var word = words[word_index]
-		if is_in_first_word:
-			res = word; 
-			is_in_first_word = false;
-		else:
-			res += " "  + word; 
-	return res.to_lower()
+func _get_prompt(number_of_words: int):
+	var http_request = HTTPRequest.new()
+	add_child(http_request)
+	http_request.connect("request_completed", self, "_http_request_completed")
+	var error = http_request.request("https://random-word-api.vercel.app/api?words=" + str(number_of_words))
+	print(error)
+	if error != OK:
+		push_error("An error occurred in the HTTP request.")
+	return "1"
 
+func _http_request_completed(result, response_code, headers, body):
+	var words = []
+	
+	print(response_code)
+
+	if(response_code == 200):
+		var json = parse_json(body.get_string_from_utf8())
+		if json != null and json.size() > 0:
+			for i in json:
+				words.append(i)
+
+		text = " ".join(words)
+	else:
+		print('response_code: ', response_code)
+		print('problem on the server')
 
 func start(value: int):
+	self._get_prompt(25)
 	$Timer.count(value);
 
 func start_attack(words: int = 5) -> void:
@@ -38,7 +50,8 @@ func start_attack(words: int = 5) -> void:
 			number_of_words = 1;
 		else:
 			number_of_words = words;
-		input.set_desired_text(self._get_prompt(number_of_words));
+		
+		input.set_desired_text(text);
 		inAttack = true;
 		input.start();
 
