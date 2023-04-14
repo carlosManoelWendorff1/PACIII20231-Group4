@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Super Castlevania IV OST Stage B Vampire Killer (B 1.mp3-aa376d88fba59b3e56fb105116d05ae3.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BGM/Super Castlevania IV OST Stage B Vampire Killer (B 1.mp3"
+dest_files=[ "res://.import/Super Castlevania IV OST Stage B Vampire Killer (B 1.mp3-aa376d88fba59b3e56fb105116d05ae3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
