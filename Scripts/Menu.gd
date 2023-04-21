@@ -31,3 +31,8 @@ func _on_PlayButton_pressed():
 func _on_PlayButton_focus_entered():
 	var button = get_node("VBoxContainer/PlayButton")
 	pass # Replace with function body.
+
+
+func _on_OptionsButton_pressed():
+	get_tree().change_scene("res://Scenes/Settings menu.tscn")
+	pass # Replace with function body.
