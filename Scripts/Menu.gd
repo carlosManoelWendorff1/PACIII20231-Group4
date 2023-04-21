@@ -5,15 +5,41 @@ extends Control
 # var a = 2
 # var b = "text"
 var PlayButton:Button
+var countFarClouds = 0
+var isReverseFarClouds = false
+var countCloseClouds = 0
+var isReverseCloseClouds = false
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
 	PlayButton = get_node("VBoxContainer/PlayButton")
 	PlayButton.grab_focus()
+	$ParallaxBackground/Sky.set_scale(Vector2(5,5))
 	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+
+func _process(delta):
+	$ParallaxBackground/FarClounds.set_transform(Transform2D(0.0,Vector2(self.countFarClouds,0)))
+	if $ParallaxBackground/FarClounds.get_position() < Vector2(-250,0):
+		isReverseFarClouds = true
+	if $ParallaxBackground/FarClounds.get_position() > Vector2(0,0):
+		isReverseFarClouds = false
+		
+	if !isReverseFarClouds:
+		countFarClouds -=0.02;
+	elif isReverseFarClouds:
+		countFarClouds +=0.02;
+		
+	$ParallaxBackground/closeClouds.set_transform(Transform2D(0.0,Vector2(self.countCloseClouds,0)))
+	if $ParallaxBackground/closeClouds.get_position() < Vector2(-250,0):
+		isReverseCloseClouds = true
+	if $ParallaxBackground/closeClouds.get_position() > Vector2(0,0):
+		isReverseCloseClouds = false
+		
+	if !isReverseCloseClouds:
+		countCloseClouds -=0.04;
+	elif isReverseCloseClouds:
+		countCloseClouds +=0.04;
+	
 
 
 func _on_QuitButton_pressed():
