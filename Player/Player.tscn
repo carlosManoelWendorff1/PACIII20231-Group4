@@ -15,10 +15,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, 3 ) ]
+"values": [ Vector2( 0, 3 ), Vector2( 0, 1 ), Vector2( 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=7]
@@ -105,7 +105,7 @@ script = ExtResource( 1 )
 texture = ExtResource( 4 )
 hframes = 8
 vframes = 9
-frame = 24
+frame = 9
 
 [node name="Animation" type="AnimationPlayer" parent="Sprite"]
 anims/RESET = SubResource( 5 )

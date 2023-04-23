@@ -6,34 +6,32 @@ const SPEED = 10000
 var motion = Vector2.ZERO
 var inArea = false
 export var camera_speed = 1
+var actualAnimation = "iddle"
 
 func _physics_process(delta):
-	
+
 	motion = Vector2.ZERO
 
-	if Input.is_action_pressed("ui_right"):
-		print("right")
-		motion += Vector2(1, 0)
-		$Sprite.flip_h = false
-	if Input.is_action_pressed("ui_down"):
-		print("down")
-		motion += Vector2(0, 1)
-	if Input.is_action_pressed("ui_left"):
-		print("left")
-		motion += Vector2(-1, 0)
-		$Sprite.flip_h = true
-	if Input.is_action_pressed("ui_up"):
-		print("up")
-		motion += Vector2(0, -1)
-	#if motion == Vector2(0,0):
-		#animation.play("iddle")
-	motion = motion.normalized() * SPEED * delta
-	if(motion != Vector2(0,0)):
-		print("andando")
-		animation.play("andando")
+	
+	if Input.is_action_pressed("ui_right") or Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_down"):
+		if Input.is_action_pressed("ui_right"):
+			motion += Vector2(1, 0)
+			$Sprite.flip_h = false
+			animation.play("andando")
+		if Input.is_action_pressed("ui_down"):
+			motion += Vector2(0, 1)
+			animation.play("andando")
+		if Input.is_action_pressed("ui_left"):
+			motion += Vector2(-1, 0)
+			$Sprite.flip_h = true
+			animation.play("andando")
+		if Input.is_action_pressed("ui_up"):
+			motion += Vector2(0, -1)
+			animation.play("andando")
 	else:
-		print("parado")
-		animation.stop()
+		animation.play("RESET")
+
+	motion = motion.normalized() * SPEED * delta
 	move_and_slide(motion)
 	if(inArea):
 		print("kkkk")
