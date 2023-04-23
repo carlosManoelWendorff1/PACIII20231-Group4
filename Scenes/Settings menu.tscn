@@ -1,12 +1,13 @@
 [gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://Settings menu.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Settings menu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/AssetsAlternativo/Fonts/ChiKareGo2.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/AssetsAlternativo/Keys/W-Key.png" type="Texture" id=3]
 [ext_resource path="res://Assets/AssetsAlternativo/Keys/S-Key.png" type="Texture" id=4]
 [ext_resource path="res://Assets/AssetsAlternativo/Keys/D-Key.png" type="Texture" id=5]
 [ext_resource path="res://Assets/AssetsAlternativo/Keys/A-Key.png" type="Texture" id=6]
-[ext_resource path="res://Scenes/GameHintAnimatedText.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/GameHintAnimatedText.gd" type="Script" id=7]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 70

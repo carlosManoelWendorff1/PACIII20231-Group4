@@ -8,22 +8,32 @@ var inArea = false
 export var camera_speed = 1
 
 func _physics_process(delta):
-	animate()
 	
 	motion = Vector2.ZERO
+
 	if Input.is_action_pressed("ui_right"):
+		print("right")
 		motion += Vector2(1, 0)
 		$Sprite.flip_h = false
 	if Input.is_action_pressed("ui_down"):
+		print("down")
 		motion += Vector2(0, 1)
-
 	if Input.is_action_pressed("ui_left"):
+		print("left")
 		motion += Vector2(-1, 0)
 		$Sprite.flip_h = true
 	if Input.is_action_pressed("ui_up"):
+		print("up")
 		motion += Vector2(0, -1)
-
+	#if motion == Vector2(0,0):
+		#animation.play("iddle")
 	motion = motion.normalized() * SPEED * delta
+	if(motion != Vector2(0,0)):
+		print("andando")
+		animation.play("andando")
+	else:
+		print("parado")
+		animation.stop()
 	move_and_slide(motion)
 	if(inArea):
 		print("kkkk")
