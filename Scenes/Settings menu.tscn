@@ -8,7 +8,6 @@
 [ext_resource path="res://Assets/AssetsAlternativo/Keys/A-Key.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/GameHintAnimatedText.gd" type="Script" id=7]
 
-
 [sub_resource type="DynamicFont" id=1]
 size = 70
 font_data = ExtResource( 2 )
@@ -134,7 +133,7 @@ tracks/3/keys = {
 }
 
 [sub_resource type="DynamicFont" id=8]
-size = 30
+size = 26
 use_filter = true
 font_data = ExtResource( 2 )
 
@@ -289,7 +288,7 @@ margin_top = 208.0
 margin_right = 480.0
 margin_bottom = 248.0
 custom_fonts/font = SubResource( 8 )
-text = "This game don't require a mouse"
+text = "This game does not require a mouse"
 align = 1
 autowrap = true
 script = ExtResource( 7 )
@@ -312,8 +311,8 @@ text = "|"
 
 [node name="TweenLabel21" type="Tween" parent="Label/Label2"]
 
-[connection signal="pressed" from="GobackButton" to="." method="_on_GobackButton_pressed"]
 [connection signal="pressed" from="GobackButton" to="." method="_on_GoBackButton_pressed"]
+[connection signal="pressed" from="GobackButton" to="." method="_on_GobackButton_pressed"]
 [connection signal="pressed" from="CheckButton" to="." method="_on_CheckButton_pressed"]
 [connection signal="pressed" from="ControlsButton" to="." method="_on_ControlsButton_pressed"]
 [connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]
