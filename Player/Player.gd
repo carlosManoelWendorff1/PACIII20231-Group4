@@ -6,22 +6,30 @@ const SPEED = 10000
 var motion = Vector2.ZERO
 var inArea = false
 export var camera_speed = 1
+var actualAnimation = "iddle"
 
 func _physics_process(delta):
-	animate()
-	
-	motion = Vector2.ZERO
-	if Input.is_action_pressed("ui_right"):
-		motion += Vector2(1, 0)
-		$Sprite.flip_h = false
-	if Input.is_action_pressed("ui_down"):
-		motion += Vector2(0, 1)
 
-	if Input.is_action_pressed("ui_left"):
-		motion += Vector2(-1, 0)
-		$Sprite.flip_h = true
-	if Input.is_action_pressed("ui_up"):
-		motion += Vector2(0, -1)
+	motion = Vector2.ZERO
+
+	
+	if Input.is_action_pressed("ui_right") or Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_down"):
+		if Input.is_action_pressed("ui_right"):
+			motion += Vector2(1, 0)
+			$Sprite.flip_h = false
+			animation.play("andando")
+		if Input.is_action_pressed("ui_down"):
+			motion += Vector2(0, 1)
+			animation.play("andando")
+		if Input.is_action_pressed("ui_left"):
+			motion += Vector2(-1, 0)
+			$Sprite.flip_h = true
+			animation.play("andando")
+		if Input.is_action_pressed("ui_up"):
+			motion += Vector2(0, -1)
+			animation.play("andando")
+	else:
+		animation.play("RESET")
 
 	motion = motion.normalized() * SPEED * delta
 	move_and_slide(motion)

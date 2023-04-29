@@ -9,8 +9,9 @@
 [ext_resource path="res://Assets/AssetsAlternativo/Button/Buttons.png" type="Texture" id=7]
 [ext_resource path="res://Assets/AssetsAlternativo/Fonts/ChiKareGo2.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://Scripts/Battle.gd" type="Script" id=9]
-[ext_resource path="res://Scenes/Countdown.gd" type="Script" id=10]
+[ext_resource path="res://Scripts/Countdown.gd" type="Script" id=10]
 [ext_resource path="res://Assets/Audio/BGM/Super Castlevania IV OST Stage B Vampire Killer (B 1.mp3" type="AudioStream" id=11]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
