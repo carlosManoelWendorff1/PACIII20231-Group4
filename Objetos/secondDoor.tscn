@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 17, 5.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16, 4.25 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 0, -4.5 )
+shape = SubResource( 1 )
+
+[node name="AreaPorta" type="Area2D" parent="StaticBody2D"]
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="AreaCollision" type="CollisionShape2D" parent="StaticBody2D/AreaPorta"]
+position = Vector2( 0, -4.75 )
+shape = SubResource( 2 )
