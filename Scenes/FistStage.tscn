@@ -68,13 +68,13 @@ smoothing_speed = 10.0
 tile_data = PoolIntArray( 589844, 6, 0, 589845, 8, 0, 655379, 2, 0, 655380, 10, 0, 655381, 7, 0, 655382, 3, 0, 720915, 1, 0, 720916, 4, 0, 720917, 5, 0, 720918, 0, 0 )
 
 [node name="Porta" parent="TileMap/TilePort" instance=ExtResource( 6 )]
-position = Vector2( 337, 185 )
+position = Vector2( 337.333, 176 )
 
 [node name="enemy" parent="." instance=ExtResource( 2 )]
-position = Vector2( 335, 132 )
+position = Vector2( 336, 133 )
 
 [node name="Node2D" parent="enemy" instance=ExtResource( 3 )]
-position = Vector2( 0, -4 )
+position = Vector2( 0, -2.33334 )
 
 [node name="TileMap2" parent="." instance=ExtResource( 8 )]
 tile_data = PoolIntArray( 65539, 2, 0, 65540, 2, 0, 196615, 1, 0, 327681, 3, 0, 327682, 5, 0, 393217, 4, 0, 393218, 6, 0, 393219, 7, 0, 589831, 0, 0, 655367, 1, 0 )
