@@ -105,7 +105,7 @@ script = ExtResource( 1 )
 texture = ExtResource( 4 )
 hframes = 8
 vframes = 9
-frame = 9
+frame = 24
 
 [node name="Animation" type="AnimationPlayer" parent="Sprite"]
 anims/RESET = SubResource( 5 )

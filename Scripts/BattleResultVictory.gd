@@ -15,4 +15,5 @@ func _on_ContinueButton_pressed():
 	
 func _ready():
 	var continue_button = get_node("VBoxContainer/ContinueButton")
+	set_title(true)
 	continue_button.grab_focus()
