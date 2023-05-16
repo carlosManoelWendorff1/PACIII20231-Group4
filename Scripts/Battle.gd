@@ -2,14 +2,23 @@ extends Node2D
 
 var mode = "menu";
 
+
+
 func start_countdown():
 	$Countdown.visible = true;
-	$Countdown.start(30.0)
+	var time = get_node("TextComponent").time_for_attack
+	$Countdown.start(time)
 
 func attack():
 	mode = "attack";
 	$BattleButtons.visible = false;
 	$TextComponent.visible = true;
+	$TextComponent/attack1.grab_focus()
+	$TextComponent/Arrow.text = '>'
+	$TextComponent/attack1.visible = true
+	$TextComponent/attack2.visible = true
+	$TextComponent/attack3.visible = true
+	$TextComponent/attack4.visible = true
 	
 func openMenu():
 	mode = "menu";
@@ -17,12 +26,14 @@ func openMenu():
 	$Countdown.stop();
 	$BattleButtons.visible = true;
 	$TextComponent.visible = false;
+	$BattleButtons/AttackButton.grab_focus()
 
 func end():
 	mode = "end";
 	$Countdown.visible = false;
 	$BattleButtons.visible = false;
 	$TextComponent.visible = false;
+	$BattleButtons/AttackButton.grab_focus()
 
 func run():
 	$BattleButtons.visible = false;

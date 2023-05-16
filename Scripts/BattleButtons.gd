@@ -5,7 +5,9 @@ onready var parent = self.get_parent();
 
 func _ready():
 	text_component = self.get_parent().get_node("TextComponent")
+	text_component.inAttack
 	$AttackButton.grab_focus()
+	
 	
 func _start_countdown():
 	$Countdown.start(30.0);

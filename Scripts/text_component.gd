@@ -7,9 +7,12 @@ var input = null;
 var inAttack = false;
 var accuracy_sum = 0;
 var number_of_attacks = 0;
+var attack_selected = false;
+var attack_difficult = 0;
 onready var parent = self.get_parent();
-
+var start_value = ''
 var text = ""
+export var time_for_attack = 120
 
 func _get_prompt(number_of_words: int):
 	var http_request = HTTPRequest.new()
@@ -38,9 +41,18 @@ func _http_request_completed(result, response_code, headers, body):
 		print('problem on the server')
 
 func start(value: int):
-	self._get_prompt(25)
-	$Timer.count(value);
-
+	start_value = value
+	if(attack_selected):
+		self._get_prompt(25)
+		$Timer.count(value)
+		$Arrow.text = ''
+		$attack1.visible = false
+		$attack2.visible = false
+		$attack3.visible = false
+		$attack4.visible = false
+		attack_selected = false
+	$attack1.grab_focus()
+	
 func start_attack(words: int = 5) -> void:
 	if not inAttack:
 		var number_of_words = 5;
@@ -59,7 +71,13 @@ func _ready():
 	input = get_node("input_text");
 	enemy_life = self.get_parent().get_node("EnemyLife")
 	player_life = self.get_parent().get_node("PlayerLife")
-
+	$attack1.grab_focus()
+	$Arrow.text = '>'
+	$attack1.visible = true
+	$attack2.visible = true
+	$attack3.visible = true
+	$attack4.visible = true
+	
 func clear():
 	inAttack = false;
 	input.end();
@@ -97,3 +115,36 @@ func round_to_dec(num, digit):
 func end_battle():
 	accuracy_sum = 0;
 	number_of_attacks = 0;
+
+func _on_attack2_focus_entered():
+	$Arrow.rect_position = Vector2(24,56)
+	attack_selected = true
+	attack_difficult = 1
+
+func _on_attack3_focus_entered():
+	$Arrow.rect_position = Vector2(24,88)
+
+func _on_attack4_focus_entered():
+	$Arrow.rect_position = Vector2(24,120)
+	pass # Replace with function body.
+
+func _on_attack1_focus_entered():
+	$Arrow.rect_position = Vector2(24,23)
+
+
+func _on_attack1_pressed():
+	start(120)
+	time_for_attack = 120
+
+func _on_attack2_pressed():
+	start(90)
+	time_for_attack = 90
+
+func _on_attack3_pressed():
+	start(75)
+	time_for_attack = 75
+
+func _on_attack4_pressed():
+	start(60)
+	time_for_attack = 60
+

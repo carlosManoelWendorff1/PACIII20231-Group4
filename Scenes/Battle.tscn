@@ -124,7 +124,6 @@ custom_styles/focus = SubResource( 4 )
 flat = true
 
 [node name="Countdown" type="Control" parent="."]
-visible = false
 margin_left = 24.0
 margin_top = 8.0
 margin_right = 64.0
