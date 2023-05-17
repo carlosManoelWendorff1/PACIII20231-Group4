@@ -12,7 +12,6 @@
 [ext_resource path="res://Scripts/Countdown.gd" type="Script" id=10]
 [ext_resource path="res://Assets/Audio/BGM/Super Castlevania IV OST Stage B Vampire Killer (B 1.mp3" type="AudioStream" id=11]
 
-
 [sub_resource type="DynamicFont" id=1]
 size = 50
 font_data = ExtResource( 8 )
@@ -56,7 +55,6 @@ NAME = "Enemy"
 position = Vector2( 16, 564 )
 IS_PLAYER = true
 NAME = "Player"
-DEATH_SCENE = "res://UI/Menu.tscn"
 
 [node name="BattleButtons" type="Control" parent="."]
 margin_left = 600.0

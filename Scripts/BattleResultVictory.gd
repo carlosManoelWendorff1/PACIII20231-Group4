@@ -1,6 +1,7 @@
 extends Node
 
 onready var title = $VBoxContainer2/CenterContainer/Label
+var next_phase = "res://UI/Menu.tscn"
 
 func set_title(win: bool):
 	if win:
@@ -17,3 +18,8 @@ func _ready():
 	var continue_button = get_node("VBoxContainer/ContinueButton")
 	set_title(true)
 	continue_button.grab_focus()
+	var file = File.new()
+	if file.file_exists("user://global.txt"):
+		file.open("user://global.txt", File.READ)
+		next_phase = file.get_var()
+		file.close()
