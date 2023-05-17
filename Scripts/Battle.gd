@@ -28,6 +28,11 @@ func openMenu():
 	$TextComponent.visible = false;
 	$BattleButtons/AttackButton.grab_focus()
 
+func _physics_process(delta):
+	$Player/Sprite/Animation.play("iddle")
+	$Player/Sprite/Animation.play_backwards("iddle")
+	$Player/Sprite/Animation.set_speed_scale(0.5)
+
 func end():
 	mode = "end";
 	$Countdown.visible = false;
