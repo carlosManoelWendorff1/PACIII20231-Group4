@@ -44,7 +44,8 @@ func run():
 	$BattleButtons.visible = false;
 	$TextComponent.visible = true;
 	randomize();
-	var chance = randi() % 10 + 1; 
+#	var chance = randi() % 10 + 1; 
+	var chance = 2
 	if chance == 1:
 		$TextComponent/Timer.message("Successful scape!");
 		$TextComponent/Arrow.text = ''

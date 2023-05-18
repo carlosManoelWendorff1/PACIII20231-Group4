@@ -2,7 +2,8 @@ extends Node2D
 
 export var IS_PLAYER = false;
 export var NAME = "";
-export var DEATH_SCENE = "res://Scenes/BattleResultMenu.tscn";
+var BattleResultVictory = "res://Scenes/BattleResultVictory.tscn"
+var BattleResultDefeat = "res://Scenes/BattleResultDefeat.tscn"
 
 var life = 100
 
@@ -19,5 +20,7 @@ func take_damage(damage):
 	life -= damage
 
 func die():
-	self.get_parent().end();
-	SceneTransition.change_scene(DEATH_SCENE)
+	if (IS_PLAYER):
+		SceneTransition.change_scene(BattleResultDefeat)
+	else:
+		SceneTransition.change_scene(BattleResultVictory)
