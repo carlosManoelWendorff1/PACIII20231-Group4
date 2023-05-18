@@ -46,7 +46,7 @@ func run():
 	randomize();
 	var chance = randi() % 10 + 1; 
 	if chance == 1:
-		$TextComponent/Timer.message("Successful scape!");
+		$TextComponent/Timer.message("Successful escape!");
 		$TextComponent/Arrow.text = ''
 		$TextComponent/attack1.visible = false
 		$TextComponent/attack2.visible = false
