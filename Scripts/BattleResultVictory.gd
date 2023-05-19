@@ -12,7 +12,7 @@ func set_title(win: bool):
 		title.modulate = Color.red
 
 func _on_ContinueButton_pressed():
-	SceneTransition.change_scene("res://Scenes/SecondStage.tscn")
+	SceneTransition.change_scene(next_phase)
 	
 func _ready():
 	var continue_button = get_node("VBoxContainer/ContinueButton")
