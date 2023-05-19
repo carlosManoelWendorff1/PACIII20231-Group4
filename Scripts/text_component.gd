@@ -12,6 +12,9 @@ var attack_difficult = 0;
 onready var parent = self.get_parent();
 var start_value = ''
 var text = ""
+
+var base_damage = 15
+var max_damage = 15
 export var time_for_attack = 120
 
 func _get_prompt(number_of_words: int):
@@ -102,7 +105,7 @@ func process_input_result(accuracy: float) -> void:
 		$Timer.message("MISS\nAccuracy: " + str(round_to_dec(accuracy, 2)) + "%");
 		## TODO: Chamar a animação de ataque do inimigo
 	yield(get_tree().create_timer(1.0), "timeout")
-	var damage = randi() % 15 + 15;
+	var damage = randi() % max_damage + base_damage;
 	target.take_damage(damage * multiplier)
 	parent.openMenu();
 
@@ -115,7 +118,11 @@ func round_to_dec(num, digit):
 func end_battle():
 	accuracy_sum = 0;
 	number_of_attacks = 0;
-
+	
+func set_damage(damage_min: int, damage_max: int):
+	max_damage = damage_max - damage_min;
+	base_damage = damage_min;
+	
 func _on_attack2_focus_entered():
 	$Arrow.rect_position = Vector2(24,56)
 	attack_selected = true
@@ -134,17 +141,21 @@ func _on_attack1_focus_entered():
 
 func _on_attack1_pressed():
 	start(120)
+	set_damage(5, 15)
 	time_for_attack = 120
 
 func _on_attack2_pressed():
 	start(90)
+	set_damage(15, 25)
 	time_for_attack = 90
 
 func _on_attack3_pressed():
 	start(75)
+	set_damage(25, 40)
 	time_for_attack = 75
 
 func _on_attack4_pressed():
 	start(60)
+	set_damage(40, 60)
 	time_for_attack = 60
 
