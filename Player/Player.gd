@@ -34,7 +34,6 @@ func _physics_process(delta):
 	motion = motion.normalized() * SPEED * delta
 	move_and_slide(motion)
 	if(inArea):
-		print("kkkk")
 		get_tree().change_scene("res://Scenes/DialogueContainer.tscn")
 		
 		
@@ -54,8 +53,25 @@ func animate() -> void:
 	else:
 		animation.stop()
 func _on_Area2DPlayer_area_entered(area):
-	if Input.is_action_pressed("ui_accept"):
-		print("kkkk")
-	print("encostou {}",area) # Replace with function body. # Replace with function body.
+	print("encostou {}",area.get_instance_id())
+	var aid = area.get_instance_id()
+	if(aid == 1452):
+		var file = File.new()
+		var enemy = "skelleton"
+		file.open("user://global.txt", File.WRITE)
+		file.store_var(enemy)
+		file.close() 
+	elif(aid == 1438):
+		var file = File.new()
+		var enemy = "ogre"
+		file.open("user://global.txt", File.WRITE)
+		file.store_var(enemy)
+		file.close() 
+	elif(aid == 1413):
+		var file = File.new()
+		var enemy = "mini_ogre"
+		file.open("user://global.txt", File.WRITE)
+		file.store_var(enemy)
+		file.close() 
 	inArea = true
 	print(inArea)

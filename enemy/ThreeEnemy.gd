@@ -13,3 +13,4 @@ func _physics_process(delta):
 func animate() -> void:
 	if motion == Vector2.ZERO:
 		animation.play("iddle")
+
