@@ -119,7 +119,7 @@ tracks/3/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 14.5, 18.5 )
+extents = Vector2( 16.75, 18 )
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -132,10 +132,11 @@ hframes = 11
 anims/RESET = SubResource( 1 )
 anims/idle = SubResource( 2 )
 
-[node name="Area2D_ThreeEnemy" type="Area2D" parent="."]
+[node name="Area2D_skelleton" type="Area2D" parent="."]
+position = Vector2( -5, -2 )
+collision_layer = 2
+collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_ThreeEnemy"]
-position = Vector2( -3.5, 3.5 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_skelleton"]
+position = Vector2( 3, 3 )
 shape = SubResource( 3 )
-
-[connection signal="area_entered" from="Area2D_ThreeEnemy" to="." method="_on_Area2D_area_entered"]

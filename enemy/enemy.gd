@@ -27,7 +27,7 @@ func _ready():
 		if(enemy == 'ogre'):
 			$Sprite.visible = true
 			$Sprite/AnimationPlayer.play("idle")
-		if(enemy == 'mini_ogre'):
+		if(enemy == 'miniOgre'):
 			$Sprite3.visible = true
 			$Sprite3/AnimationPlayer.play("iddlesecond")
 		file.close()
