@@ -8,6 +8,16 @@ var inArea = false
 export var camera_speed = 1
 var actualAnimation = "iddle"
 
+var enemy = "skelleton"
+
+func update_enemy(new_enemy):
+	enemy = new_enemy
+	var file = File.new()
+	var enemy = enemy
+	file.open("user://global.txt", File.WRITE)
+	file.store_var(enemy)
+	file.close() 
+
 func _physics_process(delta):
 
 	motion = Vector2.ZERO
@@ -34,9 +44,8 @@ func _physics_process(delta):
 	motion = motion.normalized() * SPEED * delta
 	move_and_slide(motion)
 	if(inArea):
-		print("kkkk")
 		get_tree().change_scene("res://Scenes/DialogueContainer.tscn")
-		
+		pass
 		
 
 func _process(delta):
@@ -44,7 +53,7 @@ func _process(delta):
 		SceneTransition.change_scene("res://UI/Menu.tscn")
 	
 func _on_Area2DPlayer_area_exited(area):
-	print("desencostou {}",area) # Replace with function body.
+	print("desencostou {}",area )# Replace with function body.
 	inArea = false
 	print(inArea)
 
@@ -54,8 +63,20 @@ func animate() -> void:
 	else:
 		animation.stop()
 func _on_Area2DPlayer_area_entered(area):
-	if Input.is_action_pressed("ui_accept"):
-		print("kkkk")
-	print("encostou {}",area) # Replace with function body. # Replace with function body.
+	var area_str = str(area)  # Convert the 'area' object to a string
+	var result = area_str.split(":", 1)[0]
+	var result2 = str(result).substr(area_str.find("_") + 1)
+	if(result2 != "Area2D"):
+		print(result2)
+		var file = File.new()
+		var enemy = result2
+		file.open("user://global.txt", File.WRITE)
+		file.store_var(enemy)
+		file.close()   # Output: fourEnemy
 	inArea = true
-	print(inArea)
+
+
+func _on_Area2DPlayer_body_entered(body):
+	print(body)
+	print("siuuuuu")
+	pass # Replace with function body.

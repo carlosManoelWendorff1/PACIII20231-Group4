@@ -129,3 +129,4 @@ shape = SubResource( 4 )
 
 [connection signal="area_entered" from="Area2DPlayer" to="." method="_on_Area2DPlayer_area_entered"]
 [connection signal="area_exited" from="Area2DPlayer" to="." method="_on_Area2DPlayer_area_exited"]
+[connection signal="body_entered" from="Area2DPlayer" to="." method="_on_Area2DPlayer_body_entered"]

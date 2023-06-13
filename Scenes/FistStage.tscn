@@ -1,7 +1,7 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/AssetsAlternativo/TileMapAlt/0x72_DungeonTilesetII_v1.3.png" type="Texture" id=1]
-[ext_resource path="res://enemy/enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemy/FourEnemy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Objetos/Walls.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/TileWall.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/TilePort.tscn" type="PackedScene" id=5]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Scenes/objects.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Audio/BGM/Super Castlevania IV OST Stage 3 The Cave (3 1.mp3" type="AudioStream" id=9]
 [ext_resource path="res://Scenes/FistStage.gd" type="Script" id=10]
+[ext_resource path="res://enemy/SecondEnemy.tscn" type="PackedScene" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Floor"
@@ -76,10 +77,13 @@ tile_data = PoolIntArray( 589844, 6, 0, 589845, 8, 0, 655379, 2, 0, 655380, 10, 
 [node name="Porta" parent="TileMap/TilePort" instance=ExtResource( 6 )]
 position = Vector2( 337.333, 176 )
 
-[node name="enemy" parent="." instance=ExtResource( 2 )]
+[node name="SecondEnemy" parent="." instance=ExtResource( 11 )]
+position = Vector2( 323.333, 45 )
+
+[node name="FourEnemy" parent="." instance=ExtResource( 2 )]
 position = Vector2( 336, 133 )
 
-[node name="Node2D" parent="enemy" instance=ExtResource( 3 )]
+[node name="Node2D" parent="FourEnemy" instance=ExtResource( 3 )]
 position = Vector2( 0, -2.33334 )
 
 [node name="TileMap2" parent="." instance=ExtResource( 8 )]
