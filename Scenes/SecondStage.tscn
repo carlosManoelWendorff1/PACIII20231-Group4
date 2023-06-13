@@ -1216,7 +1216,10 @@ position = Vector2( 21, 105 )
 scale = Vector2( 1, 0.98283 )
 current = true
 zoom = Vector2( 0.2, 0.2 )
-limit_left = -10000001
+limit_left = 0
+limit_top = 0
+limit_right = 608
+limit_bottom = 428
 smoothing_enabled = true
 smoothing_speed = 10.0
 
