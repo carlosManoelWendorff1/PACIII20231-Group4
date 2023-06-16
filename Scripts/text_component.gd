@@ -1,5 +1,10 @@
 extends Control
 
+const fireball_scene = preload("res://Objetos/FireballAnimationAlt.tscn")
+const explosion_scene = preload("res://Objetos/ExplosionAnimationAlt.tscn")
+const slash_scene = preload("res://Objetos/SlashAnimationAlt.tscn")
+
+var attack_name = ""
 var enemy_life = null;
 var player_life = null;
 var input = null;
@@ -97,13 +102,21 @@ func process_input_result(accuracy: float) -> void:
 		if(accuracy == 100):
 			multiplier =2
 		$Timer.message("HIT\nAccuracy: " + str(round_to_dec(accuracy, 2)) + "%");
-		## TODO: Chamar a animação de ataque do player
+		match attack_name:
+			"Fireball":
+				var fireball = fireball_scene.instance()
+				get_parent().add_child(fireball)
+				yield(get_tree().create_timer(1.1), "timeout")
+				var explosion = explosion_scene.instance()
+				get_parent().add_child(explosion)
+				
 	else:
 		target = player_life; 
 		if(accuracy == 0):
 			multiplier =2
 		$Timer.message("MISS\nAccuracy: " + str(round_to_dec(accuracy, 2)) + "%");
-		## TODO: Chamar a animação de ataque do inimigo
+		var slash = slash_scene.instance()
+		get_parent().add_child(slash)
 	yield(get_tree().create_timer(1.0), "timeout")
 	var damage = randi() % max_damage + base_damage;
 	target.take_damage(damage * multiplier)
@@ -143,19 +156,22 @@ func _on_attack1_pressed():
 	start(120)
 	set_damage(5, 15)
 	time_for_attack = 120
+	attack_name = "Fireball"
 
 func _on_attack2_pressed():
 	start(90)
 	set_damage(15, 25)
 	time_for_attack = 90
+	attack_name = "Frostball"
 
 func _on_attack3_pressed():
 	start(75)
 	set_damage(25, 40)
 	time_for_attack = 75
+	attack_name = "SoulDrain"
 
 func _on_attack4_pressed():
 	start(60)
 	set_damage(40, 60)
 	time_for_attack = 60
-
+	attack_name = "FireballStorm"
