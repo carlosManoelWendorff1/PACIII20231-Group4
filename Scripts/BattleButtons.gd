@@ -1,6 +1,7 @@
 extends Control
 
 var text_component = null;
+var shown_tutorial = false;
 onready var parent = self.get_parent();
 
 func _ready():
@@ -15,6 +16,9 @@ func _start_countdown():
 func _on_Button_pressed():
 	randomize();
 	var word_index = randi() % 20;
+	if not shown_tutorial:
+		self.get_parent().get_node("BattleOptions").show_popup();
+		shown_tutorial = true;
 	parent.attack();
 	text_component.start(word_index);
 
