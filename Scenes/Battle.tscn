@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/AssetsAlternativo/SpritesheetAlt/battle-background.webp" type="Texture" id=1]
 [ext_resource path="res://UI/Lifebar.tscn" type="PackedScene" id=2]
@@ -20,10 +20,6 @@ font_data = ExtResource( 8 )
 
 [sub_resource type="StyleBoxEmpty" id=4]
 
-[sub_resource type="DynamicFont" id=2]
-size = 30
-font_data = ExtResource( 8 )
-
 [node name="Battle" type="Node2D"]
 script = ExtResource( 9 )
 
@@ -38,9 +34,6 @@ margin_left = 592.0
 margin_top = 411.0
 margin_right = 1008.0
 margin_bottom = 587.0
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="enemy" parent="." instance=ExtResource( 3 )]
 position = Vector2( 672, 248 )
@@ -66,9 +59,6 @@ margin_top = 432.0
 margin_right = 1016.0
 margin_bottom = 612.0
 script = ExtResource( 6 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Attack" type="Sprite" parent="BattleButtons"]
 position = Vector2( 71.9999, 96 )
@@ -123,10 +113,11 @@ custom_styles/focus = SubResource( 4 )
 flat = true
 
 [node name="Countdown" type="Control" parent="."]
-margin_left = 24.0
-margin_top = 8.0
-margin_right = 64.0
-margin_bottom = 48.0
+visible = false
+margin_left = 593.0
+margin_top = 367.0
+margin_right = 1009.0
+margin_bottom = 407.0
 script = ExtResource( 10 )
 __meta__ = {
 "_edit_group_": true
@@ -135,10 +126,11 @@ __meta__ = {
 [node name="Timer" type="Timer" parent="Countdown"]
 process_mode = 0
 
-[node name="Sec" type="RichTextLabel" parent="Countdown"]
-margin_right = 40.0
+[node name="TimerBar" type="ProgressBar" parent="Countdown"]
+margin_right = 416.0
 margin_bottom = 40.0
-custom_fonts/normal_font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+percent_visible = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )

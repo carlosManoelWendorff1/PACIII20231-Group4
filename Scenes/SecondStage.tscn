@@ -1224,10 +1224,12 @@ smoothing_enabled = true
 smoothing_speed = 10.0
 
 [node name="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 224, -10 )
+position = Vector2( 223, -12 )
+scale = Vector2( 2, 1 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 48, 441 )
+position = Vector2( 48, 444 )
+scale = Vector2( 2, 1 )
 
 [node name="SecondEnemy" parent="." instance=ExtResource( 4 )]
 position = Vector2( 533, 106 )

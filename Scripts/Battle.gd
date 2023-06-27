@@ -2,7 +2,17 @@ extends Node2D
 
 var mode = "menu";
 const slash_scene = preload("res://Objetos/SlashAnimationAlt.tscn")
+onready var timer = get_node("Countdown/Timer")
+onready var timer_bar = get_node("Countdown/TimerBar")
 
+func _ready():
+	$Countdown.visible = false
+	$TextComponent.visible = false
+	timer.wait_time = timer_bar.value
+
+func _process(delta):
+	#print(timer.time_left)
+	timer_bar.value = timer.time_left
 
 func start_countdown():
 	$Countdown.visible = true;
