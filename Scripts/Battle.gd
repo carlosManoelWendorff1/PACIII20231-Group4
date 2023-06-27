@@ -1,7 +1,7 @@
 extends Node2D
 
 var mode = "menu";
-
+const slash_scene = preload("res://Objetos/SlashAnimationAlt.tscn")
 
 
 func start_countdown():
@@ -63,14 +63,15 @@ func run():
 		$TextComponent/attack2.visible = false
 		$TextComponent/attack3.visible = false
 		$TextComponent/attack4.visible = false
-		## TODO: Chamar a animação de ataque do inimigo
+		var slash = slash_scene.instance()
+		get_parent().add_child(slash)
 		yield(get_tree().create_timer(1.0), "timeout")
 		$PlayerLife.take_damage(damage)
 		_on_AttackButton_focus_entered()
 		$BattleButtons/AttackButton.grab_focus()
 	$BattleButtons.visible = true;
 	$TextComponent.visible = false;
-
+	
 func attack_timeout():
 	var damage = randi() % 15 + 15;
 	$Countdown.visible = false;

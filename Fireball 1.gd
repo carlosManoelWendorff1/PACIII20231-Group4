@@ -1,11 +1,16 @@
 extends Area2D
 
+
 const fireball_speed = 200
-onready var animation_player = get_node("Sprite/AnimationPlayer2")
+onready var animation_player = get_node("Sprite/AnimationPlayer1")
+onready var animation_player2 = get_node("Sprite/AnimationPlayer2")
+onready var animation_player3 = get_node("Sprite/AnimationPlayer3")
 
 func _ready():
 	set_process(true)
 	animation_player.play("FireBall Animation")
+	animation_player2.play("FireBall Animation")
+	animation_player3.play("FireBall Animation")
 	
 func _process(delta):
 	var speed_x = 1
