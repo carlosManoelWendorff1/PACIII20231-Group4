@@ -194,9 +194,10 @@ z_index = 13
 z_as_relative = false
 texture = ExtResource( 14 )
 
-[node name="Battle ButtonsPopup" parent="." instance=ExtResource( 12 )]
+[node name="BattleButtonsPopup" parent="." instance=ExtResource( 12 )]
+visible = false
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="Battle ButtonsPopup"]
+[node name="RichTextLabel3" type="RichTextLabel" parent="BattleButtonsPopup"]
 margin_left = 137.0
 margin_top = 333.0
 margin_right = 462.0
@@ -206,7 +207,7 @@ bbcode_enabled = true
 bbcode_text = "O botão de ataque inicia o combate com o inimigo, lhe dando opcões de ataques."
 text = "O botão de ataque inicia o combate com o inimigo, lhe dando opcões de ataques."
 
-[node name="RichTextLabel4" type="RichTextLabel" parent="Battle ButtonsPopup"]
+[node name="RichTextLabel4" type="RichTextLabel" parent="BattleButtonsPopup"]
 margin_left = 587.0
 margin_top = 331.0
 margin_right = 912.0
@@ -216,7 +217,7 @@ bbcode_enabled = true
 bbcode_text = "O botão de run é utilizado para fugir da batalha sem engajar no combate."
 text = "O botão de run é utilizado para fugir da batalha sem engajar no combate."
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Battle ButtonsPopup"]
+[node name="RichTextLabel" type="RichTextLabel" parent="BattleButtonsPopup"]
 margin_left = 420.0
 margin_top = 96.0
 margin_right = 684.0
@@ -226,7 +227,7 @@ bbcode_enabled = true
 bbcode_text = "Basic Battle"
 text = "Basic Battle"
 
-[node name="Buttons" type="Sprite" parent="Battle ButtonsPopup"]
+[node name="Buttons" type="Sprite" parent="BattleButtonsPopup"]
 position = Vector2( 511, 229 )
 texture = ExtResource( 13 )
 

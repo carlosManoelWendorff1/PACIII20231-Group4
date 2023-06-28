@@ -2,7 +2,14 @@ extends Node2D
 
 var mode = "menu";
 
-
+func _ready():
+	var file = File.new()
+	file.open("user://tutorial.txt", File.READ)
+	var file_contents = file.get_as_text();
+	file.close()
+	print(file_contents)
+	if file_contents != "true":
+		get_node("BattleButtonsPopup").show_popup();
 
 func start_countdown():
 	$Countdown.visible = true;

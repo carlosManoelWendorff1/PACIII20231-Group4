@@ -102,6 +102,7 @@ volume_db = -4.0
 autoplay = true
 
 [node name="popup" parent="." instance=ExtResource( 6 )]
+visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="popup"]
 margin_left = 397.0

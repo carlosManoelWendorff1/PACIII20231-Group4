@@ -16,9 +16,17 @@ func _start_countdown():
 func _on_Button_pressed():
 	randomize();
 	var word_index = randi() % 20;
-	if not shown_tutorial:
+	var file = File.new()
+	file.open("user://tutorial.txt", File.READ)
+	var file_contents = file.get_as_text();
+	print("second")
+	print(file_contents)
+	file.close()
+	if file_contents != "true":
 		self.get_parent().get_node("BattleOptions").show_popup();
-		shown_tutorial = true;
+		file.open("user://tutorial.txt", File.WRITE)
+		file.store_string("true")
+		file.close()
 	parent.attack();
 	text_component.start(word_index);
 
