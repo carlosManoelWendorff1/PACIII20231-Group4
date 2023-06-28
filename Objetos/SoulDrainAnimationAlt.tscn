@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Objetos/SoulDrain.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Objetos/SoulDrainAnimationAlt.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 79 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Soul"
+length = 0.864
+step = 0.012
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.012, 0.024, 0.036, 0.048, 0.06, 0.072, 0.084, 0.096, 0.108, 0.12, 0.132, 0.144, 0.156, 0.168, 0.18, 0.192, 0.204, 0.216, 0.228, 0.24, 0.252, 0.264, 0.276, 0.288, 0.3, 0.312, 0.324, 0.336, 0.348, 0.36, 0.372, 0.384, 0.396, 0.408, 0.42, 0.432, 0.444, 0.456, 0.468, 0.48, 0.492, 0.504, 0.516, 0.528, 0.54, 0.552, 0.564, 0.576, 0.588, 0.6, 0.612, 0.624, 0.636, 0.648, 0.66, 0.672, 0.684, 0.696, 0.708, 0.72, 0.732, 0.744, 0.756, 0.768, 0.78, 0.792, 0.804, 0.816, 0.828, 0.84, 0.852 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 ]
+}
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 86.25, 85.5 )
+
+[node name="Souldrain" type="Area2D"]
+position = Vector2( -4, 4 )
+script = ExtResource( 2 )
+
+[node name="Sprite" parent="." instance=ExtResource( 1 )]
+position = Vector2( 685, 248 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="Sprite"]
+anims/RESET = SubResource( 1 )
+anims/Soul = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 11, -10 )
+shape = SubResource( 3 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
+[connection signal="screen_entered" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_entered"]
