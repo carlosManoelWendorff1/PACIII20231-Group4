@@ -3,9 +3,6 @@ extends Control
 const fireball_scene = preload("res://Objetos/FireballAnimationAlt.tscn")
 const explosion_scene = preload("res://Objetos/ExplosionAnimationAlt.tscn")
 const slash_scene = preload("res://Objetos/SlashAnimationAlt.tscn")
-const frostball_scene = preload("res://Objetos/FrostballAnimationAlt.tscn")
-const souldrainball_scene = preload("res://Objetos/SoulDrainBallAnimationAlt.tscn")
-const souldrain_scene = preload("res://Objetos/SoulDrainAnimationAlt.tscn")
 
 var attack_name = ""
 var enemy_life = null;
@@ -100,7 +97,7 @@ func process_input_result(accuracy: float) -> void:
 	var target = null;
 	var multiplier = 1;
 	input.end();
-	if(accuracy >= 0):
+	if(accuracy >= 70):
 		target = enemy_life; 
 		if(accuracy == 100):
 			multiplier =2
@@ -112,43 +109,6 @@ func process_input_result(accuracy: float) -> void:
 				yield(get_tree().create_timer(1.1), "timeout")
 				var explosion = explosion_scene.instance()
 				get_parent().add_child(explosion)
-			"Frostball":
-				var iceball = frostball_scene.instance()
-				get_parent().add_child(iceball)
-				yield(get_tree().create_timer(1.1), "timeout")
-				var explosion = explosion_scene.instance()
-				get_parent().add_child(explosion)
-			"SoulDrain":
-				var souldrain = souldrain_scene.instance()
-				get_parent().add_child(souldrain)
-				yield(get_tree().create_timer(0.864), "timeout")
-				var souldrainball = souldrainball_scene.instance()
-				get_parent().add_child(souldrainball)
-			"FireballStorm":
-				var fireball = fireball_scene.instance()
-				get_parent().add_child(fireball)
-				yield(get_tree().create_timer(1.1), "timeout")
-				var explosion = explosion_scene.instance()
-				get_parent().add_child(explosion)
-				explosion.scale /= 1.5
-				yield(get_tree().create_timer(0.2), "timeout")
-				var fireball2 = fireball_scene.instance()
-				get_parent().add_child(fireball2)
-				fireball2.position =  Vector2(371,290)
-				yield(get_tree().create_timer(1.1), "timeout")
-				var explosion2 = explosion_scene.instance()
-				get_parent().add_child(explosion2)
-				explosion2.scale /= 1.5
-				explosion2.position = Vector2(685,210)
-				yield(get_tree().create_timer(0.2), "timeout")
-				var fireball3 = fireball_scene.instance()
-				get_parent().add_child(fireball3)
-				fireball3.position = Vector2(371,366)
-				yield(get_tree().create_timer(1.1), "timeout")
-				var explosion3 = explosion_scene.instance()
-				get_parent().add_child(explosion3)
-				explosion3.scale /= 1.5
-				explosion3.position = Vector2(685,286)
 				
 	else:
 		target = player_life; 

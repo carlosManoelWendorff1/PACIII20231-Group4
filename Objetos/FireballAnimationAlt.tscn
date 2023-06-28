@@ -39,7 +39,7 @@ tracks/0/keys = {
 radius = 15.0
 
 [node name="Fireball" type="Area2D"]
-position = Vector2( 371, 328 )
+position = Vector2( 374, 336 )
 rotation = -0.174533
 script = ExtResource( 2 )
 

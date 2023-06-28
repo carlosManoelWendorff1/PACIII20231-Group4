@@ -9,7 +9,7 @@ func _ready():
 	
 func _process(delta):
 	var speed_x = 1
-	var speed_y = -0.2
+	var speed_y = -0.1
 	var motion = Vector2(speed_x, speed_y) * fireball_speed
 	set_position(get_position() + motion * delta)
 
