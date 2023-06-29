@@ -14,6 +14,10 @@ config/name="Pac"
 run/main_scene="res://UI/Menu.tscn"
 config/icon="res://icon.png"
 
+[audio]
+
+enable_audio_input=true
+
 [autoload]
 
 SceneTransition="*res://UI/scene_transition.tscn"

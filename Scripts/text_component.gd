@@ -100,7 +100,7 @@ func process_input_result(accuracy: float) -> void:
 	var target = null;
 	var multiplier = 1;
 	input.end();
-	if(accuracy >= 0):
+	if(accuracy >= 70):
 		target = enemy_life; 
 		if(accuracy == 100):
 			multiplier =2
@@ -109,44 +109,68 @@ func process_input_result(accuracy: float) -> void:
 			"Fireball":
 				var fireball = fireball_scene.instance()
 				get_parent().add_child(fireball)
+				$Fireball.play()
+				$Fireball.stop()
 				yield(get_tree().create_timer(1.1), "timeout")
 				var explosion = explosion_scene.instance()
 				get_parent().add_child(explosion)
+				$Explosion.play()
+				$Explosion.stop()
 			"Frostball":
 				var iceball = frostball_scene.instance()
 				get_parent().add_child(iceball)
+				$Iceball.play()
+				$Iceball.stop()
 				yield(get_tree().create_timer(1.1), "timeout")
 				var explosion = explosion_scene.instance()
 				get_parent().add_child(explosion)
+				$Explosion.play()
+				$Explosion.stop()
 			"SoulDrain":
 				var souldrain = souldrain_scene.instance()
 				get_parent().add_child(souldrain)
+				$Drain.play()
+				$Drain.stop()
 				yield(get_tree().create_timer(0.864), "timeout")
 				var souldrainball = souldrainball_scene.instance()
 				get_parent().add_child(souldrainball)
+				$DrainFlow.play()
+				$DrainFlow.stop()
 			"FireballStorm":
 				var fireball = fireball_scene.instance()
 				get_parent().add_child(fireball)
+				$Fireball.play()
+				$Fireball.stop()
 				yield(get_tree().create_timer(1.1), "timeout")
 				var explosion = explosion_scene.instance()
 				get_parent().add_child(explosion)
+				$Explosion.play()
+				$Explosion.stop()
 				explosion.scale /= 1.5
 				yield(get_tree().create_timer(0.2), "timeout")
 				var fireball2 = fireball_scene.instance()
 				get_parent().add_child(fireball2)
+				$Fireball.play()
+				$Fireball.stop()
 				fireball2.position =  Vector2(371,290)
 				yield(get_tree().create_timer(1.1), "timeout")
 				var explosion2 = explosion_scene.instance()
 				get_parent().add_child(explosion2)
+				$Explosion.play()
+				$Explosion.stop()
 				explosion2.scale /= 1.5
 				explosion2.position = Vector2(685,210)
 				yield(get_tree().create_timer(0.2), "timeout")
 				var fireball3 = fireball_scene.instance()
 				get_parent().add_child(fireball3)
+				$Fireball.play()
+				$Fireball.stop()
 				fireball3.position = Vector2(371,366)
 				yield(get_tree().create_timer(1.1), "timeout")
 				var explosion3 = explosion_scene.instance()
 				get_parent().add_child(explosion3)
+				$Explosion.play()
+				$Explosion.stop()
 				explosion3.scale /= 1.5
 				explosion3.position = Vector2(685,286)
 				

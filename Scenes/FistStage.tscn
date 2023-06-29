@@ -91,5 +91,5 @@ tile_data = PoolIntArray( 65539, 2, 0, 65540, 2, 0, 196615, 1, 0, 327681, 3, 0, 
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
-volume_db = -4.0
+volume_db = -13.0
 autoplay = true

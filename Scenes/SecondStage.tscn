@@ -5,7 +5,7 @@
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://enemy/SecondEnemy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Objetos/secondDoor.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Assets/Audio/BGM/Super Castlevania IV OST Stage 3 The Cave (3 1.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Assets/Audio/BGM/Final Fantasy VII OST   Under the Rotten Pizz.mp3" type="AudioStream" id=6]
 [ext_resource path="res://Objetos/Walls.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/SecondStageScript.gd" type="Script" id=8]
 
@@ -1242,5 +1242,5 @@ position = Vector2( 537, 81 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
-volume_db = -4.0
+volume_db = -10.0
 autoplay = true
