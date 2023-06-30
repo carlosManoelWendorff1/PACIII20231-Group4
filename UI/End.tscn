@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/AssetsAlternativo/Fonts/ChiKareGo2.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://End.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Audio/BGM/Final Fantasy VII   Victory Fanfare [HD.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Audio/BGM/Lore Game   Arrival Fast! Departur.mp3" type="AudioStream" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 36
@@ -83,7 +83,7 @@ valign = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
-volume_db = -5.0
+volume_db = -5.622
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_pressed"]
