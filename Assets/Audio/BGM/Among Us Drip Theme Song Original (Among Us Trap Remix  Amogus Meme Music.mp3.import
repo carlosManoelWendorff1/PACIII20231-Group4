@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Among Us Drip Theme Song Original (Among Us Trap Remix  Amogus Meme Music.mp3-c840d2a0c265de4651d17c4de9c6f5d4.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BGM/Among Us Drip Theme Song Original (Among Us Trap Remix  Amogus Meme Music.mp3"
+dest_files=[ "res://.import/Among Us Drip Theme Song Original (Among Us Trap Remix  Amogus Meme Music.mp3-c840d2a0c265de4651d17c4de9c6f5d4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
