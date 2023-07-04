@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Final Fantasy VII OST   Under the Rotten Pizz.mp3-c49b9e0eb214124440d084814b64bd0b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BGM/Final Fantasy VII OST   Under the Rotten Pizz.mp3"
+dest_files=[ "res://.import/Final Fantasy VII OST   Under the Rotten Pizz.mp3-c49b9e0eb214124440d084814b64bd0b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
