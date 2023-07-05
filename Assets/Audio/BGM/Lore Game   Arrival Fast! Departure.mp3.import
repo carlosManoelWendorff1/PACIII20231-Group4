@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lore Game   Arrival Fast! Departure.mp3-347744d51a3512516923a4d0647e4c6c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BGM/Lore Game   Arrival Fast! Departure.mp3"
+dest_files=[ "res://.import/Lore Game   Arrival Fast! Departure.mp3-347744d51a3512516923a4d0647e4c6c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
