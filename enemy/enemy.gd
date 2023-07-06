@@ -17,8 +17,8 @@ func animate() -> void:
 
 func _ready():
 	var file = File.new()
-	if file.file_exists("user://global.txt"):
-		file.open("user://global.txt", File.READ)
+	if file.file_exists("user://globalEnemy.txt"):
+		file.open("user://globalEnemy.txt", File.READ)
 		enemy = file.get_var()
 		print(enemy)
 		if(enemy == 'skelleton'):

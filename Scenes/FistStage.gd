@@ -10,11 +10,8 @@ extends Node2D
 func _ready():
 	var file = File.new()
 	var next_phase = "res://Scenes/SecondStage.tscn"
-	var enemy = "ogre"
 	file.open("user://global.txt", File.WRITE)
 	file.store_var(next_phase)
-	file.close()
-	file.store_var(enemy)
 	file.close()  # Replace with function body.
 
 

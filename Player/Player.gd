@@ -70,7 +70,7 @@ func _on_Area2DPlayer_area_entered(area):
 		print(result2)
 		var file = File.new()
 		var enemy = result2
-		file.open("user://global.txt", File.WRITE)
+		file.open("user://globalEnemy.txt", File.WRITE)
 		file.store_var(enemy)
 		file.close()   # Output: fourEnemy
 	inArea = true
@@ -78,5 +78,4 @@ func _on_Area2DPlayer_area_entered(area):
 
 func _on_Area2DPlayer_body_entered(body):
 	print(body)
-	print("siuuuuu")
 	pass # Replace with function body.
