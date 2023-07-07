@@ -11,5 +11,5 @@ dest_files=[ "res://.import/mixkit-sword-slash-swoosh-1476.mp3-8805aa1c5975b378b
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
