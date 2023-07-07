@@ -18,6 +18,7 @@ var number_of_attacks = 0;
 var attack_selected = false;
 var attack_difficult = 0;
 onready var parent = self.get_parent();
+onready var countdown = parent.get_node("Countdown/Timer")
 var start_value = ''
 var text = ""
 
@@ -105,6 +106,7 @@ func process_input_result(accuracy: float) -> void:
 		if(accuracy == 100):
 			multiplier =2
 		$Timer.message("HIT\nAccuracy: " + str(round_to_dec(accuracy, 2)) + "%");
+		countdown.stop()
 		match attack_name:
 			"Fireball":
 				var fireball = fireball_scene.instance()
