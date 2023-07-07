@@ -100,7 +100,7 @@ func process_input_result(accuracy: float) -> void:
 	var target = null;
 	var multiplier = 1;
 	input.end();
-	if(accuracy >= 70):
+	if(accuracy >= 0):
 		target = enemy_life; 
 		if(accuracy == 100):
 			multiplier =2
