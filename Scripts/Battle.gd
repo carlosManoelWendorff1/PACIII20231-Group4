@@ -75,6 +75,8 @@ func run():
 		$TextComponent/attack4.visible = false
 		var slash = slash_scene.instance()
 		get_parent().add_child(slash)
+		$TextComponent/Slash.play()
+		$TextComponent/Slash.stop()
 		yield(get_tree().create_timer(1.0), "timeout")
 		$PlayerLife.take_damage(damage)
 		_on_AttackButton_focus_entered()

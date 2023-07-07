@@ -101,7 +101,7 @@ func process_input_result(accuracy: float) -> void:
 	var target = null;
 	var multiplier = 1;
 	input.end();
-	if(accuracy >= 0):
+	if(accuracy >= 70):
 		target = enemy_life; 
 		if(accuracy == 100):
 			multiplier =2
@@ -183,6 +183,8 @@ func process_input_result(accuracy: float) -> void:
 		$Timer.message("MISS\nAccuracy: " + str(round_to_dec(accuracy, 2)) + "%");
 		var slash = slash_scene.instance()
 		get_parent().add_child(slash)
+		$Slash.play()
+		$Slash.stop()
 	yield(get_tree().create_timer(1.0), "timeout")
 	var damage = randi() % max_damage + base_damage;
 	target.take_damage(damage * multiplier)
